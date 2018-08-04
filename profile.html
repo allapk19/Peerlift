@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+	<meta property="og:image" content="https://peerlift.org/img/Peerlift_FB_Logo.png" />
+	<meta property="og:description" content="We're a simple online platform and youth-driven 501(c)(3) nonprofit making access to high school opportunities faster and fairer than ever before. " />
+	<meta property="og:url"content="https://peerlift.org/index.html" />
+	<meta property="og:title" content="Peerlift" />
+  <title>Peerlift</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-104681104-1', 'auto');
+	  ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div id="opportunity-navbar">
+    <div class="container">
+      <a href="index.html"><img src="media/logo/grayText.png"></a>
+      <a id="menu-button"><i class="fa fa-search"></i></a>
+      <nav>
+        <ul>
+          <a id="loginMobile" href="login.html"><div>Sign Up / Login</div></a>
+          <a id="opportunities-dropdown"><li>Opportunities <i class="fa fa-caret-down"></i></li></a>
+          <div id="opportunities-menu">
+            <div class="column-wrapper">
+              <a href="awards.html">
+                <i><img src="media/images/icons/awards.png"/></i>Awards
+              </a>
+              <a href="flyins.html">
+                <i><img src="media/images/icons/flyins.png"/></i>College Fly-Ins
+              </a>
+              <a href="internships.html">
+                <i><img src="media/images/icons/internships.png"/></i>Internships
+              </a>
+            </div>
+            <div class="column-wrapper">
+              <a href="scholarships.html">
+                <i><img src="media/images/icons/scholarships.png"/></i>Scholarships
+              </a>
+              <a href="studyabroad.html">
+                <i><img src="media/images/icons/studyAbroad.png"/></i>Study Abroad
+              </a>
+              <a href="summerprograms.html">
+                <i><img src="media/images/icons/summerPrograms.png"/></i>Summer Programs
+              </a>
+            </div>
+          </div>
+          <a href="index.html#mission"><li>Mission</li></a>
+          <a href="team.html"><li>Our Team</li></a>
+          <a href="getinvolved.html"><li>Get Involved</li></a>
+          <a href="donate.html"><li>Donate</li></a>
+        </ul>
+      </nav>
+      <a id="loginBTN" href="login.html">
+        <button>Profile</button>
+      </a>
+    </div>
+  </div>
+    
+  <div class="body">
+    <div class="myOpportunities">
+        <div class="container">
+            <h1>My Profile</h1>
+            <div id="noOpps">
+                <div class="emptyOpp">
+                    <h2>You haven't saved any opportunities yet.</h2>
+                    <h2><a>Go Explore! &#128522;</a></h2>
+                </div>
+            </div>
+            <div id="watchlist">
+                <h3>Keep Exploring</h3>
+            </div>
+            <button type='button' id="signOut" onclick="signOut()"><h3>Sign Out</h3></button>
+        </div>
+    </div>
+  </div>
+
+    <div class="footer-section">
+      <div class="container">
+        <ul class="socialmedia">
+          <li><a href="https://www.facebook.com/peersoverprofit/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="index.html"><img src="media/logo/whiteIcon.png"></a></li>
+          <li><a href="mailto:contact@peerlift.org" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
+        </ul>
+        <div class="footer-nav-wrapper">
+          <nav class="footer-nav">
+            <ul>
+              <li>Our Organization</li>
+              <hr>
+              <a href="index.html#mission"><li>Mission</li></a>
+              <a href="team.html"><li>Our Team</li></a>
+              <a href="getinvolved.html"><li>Get Involved</li></a>
+              <a href="donate.html"><li>Donate</li></a>
+            </ul>
+          </nav>
+          <nav class="footer-nav">
+            <ul>
+              <li>Opportunities</li>
+              <hr>
+              <a href="awards.html"><li>Awards</li></a>
+              <a href="flyins.html"><li>College Fly-Ins</li></a>
+              <a href="internships.html"><li>Internships</li></a>
+              <a href="scholarships.html"><li>Scholarships</li></a>
+              <a href="studyabroad.html"><li>Study Abroad</li></a>
+              <a href="summerprograms.html"><li>Summer Programs</li></a>
+            </ul>
+          </nav>
+        </div>
+        <p>Peerlift is an official 501(c)(3) nonprofit. Your donation is tax-deductible.</p>
+      </div>
+    </div>
+    
+
+  <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="firebase.js"></script>
+    <script>
+        function displayOpp(data) {
+            if (data != null) {
+                console.log("run");
+                var oppName = data.name;
+                var deadline = data.deadline;
+                var type = data.type;
+                var link = data.link;
+
+                var div = document.getElementById("watchlist");
+                var a = document.createElement("a");
+                a.setAttribute("href", link);
+                a.setAttribute("target", "_blank");
+                var watchItem = document.createElement("div");
+                watchItem.setAttribute("class", "watchItem");
+                var times = document.createElement("i");
+                times.setAttribute("class", "fa fa-times removeOpp");
+                var img = document.createElement("img");
+                img.setAttribute("src", "media/images/icons/" + type + ".png");
+                var h2 = document.createElement("h2");
+                var h4 = document.createElement("h4");
+
+                h4.appendChild(document.createTextNode(deadline));
+                h2.appendChild(document.createTextNode(oppName));
+
+                watchItem.appendChild(times);
+                watchItem.appendChild(img);
+                watchItem.appendChild(h2);
+                watchItem.appendChild(h4);
+                a.appendChild(watchItem);
+                div.appendChild(a);
+                
+                $(".removeOpp").click(function() {
+                    removeOpp($(this).siblings("h2").text());
+                    $(this).parents(".watchItem").css("display", "none");
+                    return false;
+                });
+            } else {
+                $("#noOpps").css("display", "block");
+                $("#watchlist").css("display", "none");
+            }
+        }
+    </script>
+	
+</body>
+</html>

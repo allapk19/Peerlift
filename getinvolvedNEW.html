@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+	<meta property="og:image" content="https://peerlift.org/img/Peerlift_FB_Logo.png" />
+	<meta property="og:description" content="We're a simple online platform and youth-driven 501(c)(3) nonprofit making access to high school opportunities faster and fairer than ever before. " />
+	<meta property="og:url"content="https://peerlift.org/index.html" />
+	<meta property="og:title" content="Peerlift" />
+  <title>Peerlift</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-104681104-1', 'auto');
+	  ga('send', 'pageview');
+      
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_org'] = 'B0XAZ';
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+        y="rec";g.shutdown=function(i,v){g(y,!1)};g.restart=function(i,v){g(y,!0)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+      })(window,document,window['_fs_namespace'],'script','user');
+  </script>
+  <base target="_blank">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="outreachstyle.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="http://mkkeck.github.io/jquery-ui-iconfont/#icons">
+  <!--   	<link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="main.js"></script>
+  <script>
+	  
+	if (document.documentElement.clientWidth > 504) {
+		$(window).resize(function(){location.reload();});
+	}
+	  
+
+	 
+    $(function() {
+	
+		$('#opportunities-dropdown').on('click', () => {
+		$('#opportunities-menu').toggle();
+		});
+	
+		
+      var CloseFunction = function() {
+        $(".modalBlackBackground").css("display", "none");
+
+      };
+      // MAKEDA
+      $("#dialog").dialog({
+        autoOpen: false,
+        width: 800,
+        height: 550,
+        resizable: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        },
+        hide: {
+          effect: "blind",
+          duration: 1000
+        },
+        close: CloseFunction,
+      });
+
+      $("#opener").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+
+      $("#overlay-container1").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+      $("#sa1").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+		
+		    $(".modalBlackBackground").on("click", function() {
+				jQuery.fx.off=true;
+				// $("#dialog").dialog("close");
+				//$( "#dialog .close").click();
+				$("#dialog").dialog().dialog("close");
+				$(".modalBlackBackground").css("display", "none");
+				return false;
+			  });  
+
+      if (document.documentElement.clientWidth < 504) {
+		$('#menu-button').on('click', () => {
+		$('#opportunities-menu').toggle();
+		});
+		  
+		  $("#dialog").dialog({
+          autoOpen: false,
+          width: 400,
+          height: 700,
+          resizable: false,
+          show: {
+            effect: "blind",
+            duration: 1000
+          },
+          hide: {
+            effect: "blind",
+            duration: 1000
+          },
+          close: CloseFunction
+
+        });
+
+        $("#opener").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+
+        $("#makeda").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+        $("#sa1").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+		  		    $(".modalBlackBackground").on("click", function() {
+				jQuery.fx.off=true;
+				// $("#dialog").dialog("close");
+				//$( "#dialog .close").click();
+				$("#dialog").dialog().dialog("close");
+				$(".modalBlackBackground").css("display", "none");
+				return false;
+			  });
+      }
+      /* BINH */
+      $("#dialog1").dialog({
+        autoOpen: false,
+        width: 800,
+        height: 550,
+        resizable: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        },
+        hide: {
+          effect: "blind",
+          duration: 1000
+        },
+        close: CloseFunction
+      });
+
+      $("#opener1").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog1").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+      $("#binh").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog1").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+      $("#sa2").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog1").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+		    $(".modalBlackBackground").on("click", function() {
+				jQuery.fx.off=true;
+				// $("#dialog").dialog("close");
+				//$( "#dialog .close").click();
+				$("#dialog1").dialog().dialog("close");
+				$(".modalBlackBackground").css("display", "none");
+				return false;
+			  });		
+
+
+      if (document.documentElement.clientWidth < 504) {
+        $("#dialog1").dialog({
+          autoOpen: false,
+          width: 400,
+          height: 700,
+          resizable: false,
+          show: {
+            effect: "blind",
+            duration: 1000
+          },
+          hide: {
+            effect: "blind",
+            duration: 1000
+          },
+          close: CloseFunction
+        });
+
+        $("#opener1").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog1").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+
+        $("#binh").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog1").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+        $("#sa2").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog1").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+			    $(".modalBlackBackground").on("click", function() {
+				jQuery.fx.off=true;
+				// $("#dialog").dialog("close");
+				//$( "#dialog .close").click();
+				$("#dialog1").dialog().dialog("close");
+				$(".modalBlackBackground").css("display", "none");
+				return false;
+			  });	  
+      }
+      /* VICTOR */
+      $("#dialog2").dialog({
+        autoOpen: false,
+        width: 800,
+        height: 550,
+        resizable: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        },
+        hide: {
+          effect: "blind",
+          duration: 1000
+        },
+        close: CloseFunction
+
+      });
+
+      $("#opener2").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog2").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+      $("#victor").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog2").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+      $("#sa3").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog2").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+		    $(".modalBlackBackground").on("click", function() {
+				jQuery.fx.off=true;
+				// $("#dialog").dialog("close");
+				//$( "#dialog .close").click();
+				$("#dialog2").dialog().dialog("close");
+				$(".modalBlackBackground").css("display", "none");
+				return false;
+			  });
+      if (document.documentElement.clientWidth < 504) {
+        $("#dialog2").dialog({
+          autoOpen: false,
+          width: 400,
+          height: 700,
+          resizable: false,
+          show: {
+            effect: "blind",
+            duration: 1000
+          },
+          hide: {
+            effect: "blind",
+            duration: 1000
+          },
+          close: CloseFunction
+
+        });
+
+        $("#opener2").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog2").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+        $("#victor").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog2").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+        $("#sa3").on("click", function() {
+          jQuery.fx.off = true;
+          $("#dialog2").dialog("open");
+          $(".modalBlackBackground").css("display", "block");
+        });
+		  		    $(".modalBlackBackground").on("click", function() {
+				jQuery.fx.off=true;
+				// $("#dialog").dialog("close");
+				//$( "#dialog .close").click();
+				$("#dialog2").dialog().dialog("close");
+				$(".modalBlackBackground").css("display", "none");
+				return false;
+			  });
+      }
+      /* CLONE DAYA */
+      $("#dialog3").dialog({
+        autoOpen: false,
+        width: 750,
+        height: 500,
+        resizable: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        },
+        hide: {
+          effect: "blind",
+          duration: 1000
+        },
+        close: CloseFunction
+
+      });
+
+      $("#opener3").on("click", function() {
+        jQuery.fx.off = true;
+        $("#dialog3").dialog("open");
+        $(".modalBlackBackground").css("display", "block");
+      });
+    });
+
+  </script>
+</head>
+
+<body id="body">
+  <div id="header" class="getinvolved-header-section">
+    <div class="container">
+      <h1>Equitable education.</h1>
+      <h2>Serve your community as a Student Ambassador.</h2>
+      <a href="#coalition" class="scroll-arrow"><i class="fa fa-caret-down"></i></a>
+    </div>
+  </div>
+
+  <div id="navbar">
+    <div class="container">
+      <a href="index.html"><img src="media/logo/grayText.png"></a>
+      <a id="menu-button"><i class="fa fa-search"></i></a>
+      <nav>
+        <ul>
+          <a id="loginMobile" href="login.html"><div>Sign Up / Login</div></a>
+          <a id="opportunities-dropdown"><li>Opportunities <i class="fa fa-caret-down"></i></li></a>
+          <div id="opportunities-menu">
+            <div class="column-wrapper">
+              <a href="awards.html">
+                  <i class="fa fa-trophy"></i>Awards
+              </a>
+              <a href="flyins.html">
+                  <i class="fa fa-plane"></i>College Fly-Ins
+              </a>
+              <a href="internships.html">
+                  <i class="fa fa-group"></i>Internships
+              </a>
+            </div>
+            <div class="column-wrapper">
+              <a href="scholarships.html">
+                  <i class="fa fa-money"></i>Scholarships
+              </a>
+              <a href="studyabroad.html">
+                  <i class="fa fa-map"></i>Study Abroad
+              </a>
+              <a href="summerprograms.html">
+                  <i class="fa fa-university"></i>Summer Programs
+              </a>
+            </div>
+          </div>
+          <a href="index.html#mission"><li>Mission</li></a>
+          <a href="team.html"><li>Our Team</li></a>
+          <a href="getinvolved.html"><li>Get Involved</li></a>
+          <a href="donate.html"><li>Donate</li></a>
+        </ul>
+      </nav>
+      <a id="loginBTN" href="login.html">
+        <button>Sign Up</button>
+      </a>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <div id="outreach-flex" class="outreach-flex">
+    <div class="innerflex" id="network">
+      <div>
+        <h3 class="flex-text">Join a national network.</h3>
+      </div>
+      <div id="gradhatdiv">
+        <!--   <img id="gradhat" src="/media/images/icons/hat@2x.png"> -->
+        <svg id="gradhat" width="211px" height="192px" viewBox="0 0 211 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+          <desc>Created with Sketch.</desc>
+          <defs>
+            <linearGradient x1="50%" y1="2.35955564%" x2="50%" y2="100%" id="linearGradient-1">
+              <stop stop-color="#85C7FF" offset="0%"></stop>
+              <stop stop-color="#7CB7FF" offset="100%"></stop>
+             </linearGradient>
+           </defs>
+           <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+             <g id="Artboard">
+               <circle id="Oval-3" fill="url(#linearGradient-1)" cx="105" cy="96" r="87"></circle>
+               <path d="M77,95 L77,98.6575734 L77,118.427064 C77,120.851655 78.4592595,123.037955 80.6983614,123.968044 L105.301339,134.187745 C106.891529,134.848286 108.688869,134.793786 110.236116,134.038109 L130.633138,124.07618 C132.693345,123.069972 134,120.977631 134,118.684837 L134,99.5719668 L77,95 Z" id="Path-3" fill="#CAE1FC"></path>
+               <path d="M76,94 L76,97.6575734 L76,117.528175 C76,119.901544 77.3990046,122.051859 79.568806,123.013546 L103.357823,133.557175 C104.9788,134.275615 106.834535,134.240322 108.427023,133.460767 L129.638006,123.077565 C131.695548,122.070356 133,119.979441 133,117.688601 L133,98.5719668" id="Path-3" fill="#E9F3FF"></path>
+               <rect id="Rectangle-3" fill="#3892FF" x="59" y="89" width="4" height="17" rx="2"></rect>
+               <g id="tassel" transform="translate(-18.000000, 104.000000)" fill="#E9F3FF">
+                 <polygon id="Triangle-2" points="79 3 82 9 76 9"></polygon>
+                 <circle id="Oval-4" cx="79" cy="3.08654339" r="3"></circle>
+               </g>
+               <path d="M54.8283544,93.0559377 L102.07569,118.535143 C103.853301,119.493761 105.993919,119.493761 107.77153,118.535143 L155.018866,93.0559377 C156.96329,92.0073625 157.689519,89.5810572 156.640944,87.6366331 C156.274172,86.9565089 155.718255,86.3971772 155.040389,86.0262469 L107.803814,60.1782358 C106.009233,59.1962347 103.837988,59.1962347 102.043406,60.1782358 L54.8068315,86.0262469 C52.8688646,87.0867088 52.1575063,89.5174157 53.2179682,91.4553825 C53.5888986,92.1332481 54.1482302,92.6891652 54.8283544,93.0559377 Z" id="Combined-Shape" fill="#BDDBFF"></path>
+             </g>
+         </g>
+      </svg>
+      </div>
+
+      <div>
+        <h4 class="flex-text">Meet and collaborate with students across the country that share the passion of making opportunities available for everyone, regardless of background.</h4>
+      </div>
+      <div>
+        <button id="joinnow" onclick="openInNewTab('https://peerlift.typeform.com/to/V0fHCc')">Join Now</button>
+      </div>
+
+    </div>
+    <div class="innerflex" id="served">
+
+      <div>
+        <h5 class="flex-textRight">Make an impact.</h5>
+      </div>
+      <div id="phonediv"><img id="phone" src="/media/images/icons/phone@2x.png"></div>
+      <div>
+        <h6 class="flex-textRight">Our outreach team doubles in size every month, and we're always looking to welcome public high school students to the team.</h6>
+      </div>
+
+      <div>
+        <button id="learnmore" onclick="openInNewTab('https://peerlift.org/team.html')">Our Team</button>
+      </div>
+    </div>
+    <div class="innerflex" id="ondemand">
+      <div>
+        <h3 class="flex-text">Connect with us.</h3>
+      </div>
+      <div id="greenmoneydiv"> <img id="greenmoney" src="/media/images/icons/map@2x.png"> </div>
+      <div>
+        <h4 class="flex-text">Share our mission with your friends and spread the word in your school and on social media.</h4>
+      </div>
+      <div> <button id="community" onclick="openInNewTab('https://facebook.com/peersoverprofit')">Share Peerlift</button> </div>
+
+    </div>
+  </div>
+
+  <!-- 
+<svg width="100vw" height="30vh">
+  <ellipse class="flex-sa" cx="60vw" cy="25vh" rx="50vw" ry="25vh" fill="linear-gradient(to bottom right, #FFB1CD, #D59BC9)"/>
+Sorry, your browser does not support inline SVG.
+</svg> -->
+
+  <div class="background-sa">
+    <div class="storiesHeader">
+      Student Ambassador Stories
+    </div>
+    <div class="flex-sa">
+      <button id="leftarrow" onclick="myFunction(slideIndex-1)"></button> 
+      <div class="SA" id="sa1">
+        <h3 class="saHeader">Hey! I'm Makeda.</h3>
+        <div class="carmen" id="makeda">
+          <br> Keep Reading
+        </div>
+        <div class="textwrap">
+          <p class="saSub">I'm a <b>College Freshman</b> in <b>Philadelphia</b><br>Always curious to learn more about the people and world around me.<br> </p>
+          <button id="opener">Keep Reading</button>
+        </div>
+      </div>
+
+      <div class="modalBlackBackground" id="modal1">
+        <div id="dialog">
+          <div class="grid">
+            <div class="carmenphoto">
+              <img class="carmenModal" src="/media/images/makeda.jpeg">
+            </div>
+            <br>
+            <div class="carmentext">
+              <b>Name:</b> Makeda Dereje <br> <br>
+              <b>Age:</b> 18 <br><br>
+              <b>Hometown: </b> Atlanta, Georgia <br><br>
+              <span style="line-height: 1em;"><b>School: </b> University of Pennsylvania</span> <br><br>
+              <b>Fun Fact: </b> I am basically obsessed with watching Vox YouTube videos. <br><br>
+              <b>Email:</b> makeda@peerlift.org
+            </div>
+            <div id="saPara">
+              I went to a public high school where many students, including myself, came from a lower-income family and guidance counselors had limited access to resources. Therefore, many out of school programs weren't an option because of either the cost or lack of knowledge about it. When I wanted to do a summer program after my junior year, I spent days searching online, finally coming across a few that offered generous scholarships and interested me. Additionally, the guidance counselors at my school didn't have much time to help in my college application process and most of their resources were limited to applying to in-state schools, which made finding scholarships that fit my needs even harder.
+              <br> I discovered PeerLift in the second half of my senior year, wishing it was sooner. I am a Student Ambassador and Community Manager, meaning I spread the mission of PeerLift to high school students, teachers, and counselors. Since my involvement, I have presented to many classes and clubs at my high school as well as worked with others at PeerLift to try to improve our outreach efforts. I am confident PeerLift would have made my high school career simpler and of it's mission of helping high school students gain access to opportunities.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="SA" id="sa2">
+        <h3 class="saHeader">Hey! I'm Binh.</h3>
+        <div class="carmen" id="binh"><br> Keep Reading</div>
+        <div class="textwrap">
+          <p class="saSub">I'm a <b>Senior</b> in <b>Texas</b><br>I'm a boba connoisseur, food enthusiast, and someone who loves learning about new discoveries. </p>
+          <button id="opener1">Keep Reading</button>
+        </div>
+      </div>
+
+      <div class="modalBlackBackground" id="modal1">
+        <div id="dialog1">
+          <div class="grid">
+            <div class="carmenphoto">
+              <img class="carmenModal" src="/media/images/binh.jpeg">
+            </div>
+            <br>
+            <div class="carmentext">
+              <b>Name:</b> Binh Nguyen <br><br>
+              <b>Age:</b> 18 <br><br>
+              <b>Hometown: </b> Houston, TX <br><br>
+              <b>School: </b> Davis High School <br><br>
+              <b>Fun Fact: </b> I really, really love tacos <br><br>
+              <b>Email:</b> binh@peerlift.org
+            </div>
+            <div id="saPara">
+              As a low-income, first generation student, I did not quite fully understand the resources available to me when it comes to educational opportunities. Coming from a high school with over 700 students in my senior class, it was difficult to reach my counselor and learn more about scholarships. Fortunately, I discovered Peerlift through my friends and were immediately awed by the organization's mission of bridging the gap between students and enriching opportunities. Joining Peerlift as a Student Ambassador has helped me clarify the ambiguities of applying to college as well as scholarships. Most importantly, I loved being able to advance the mission of equal access to opportunities, especially to students with limited resources.
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="SA" id="sa3">
+        <h3 class="saHeader">Hey! I'm Victor.</h3>
+        <div class="carmen" id="victor"><br> Keep Reading</div>
+        <div class="textwrap">
+          <p class="saSub">I'm a <b>Senior</b> in <b>Pittsburgh</b><br>I'm a guy that loves to laugh and loves to make other people laugh.<br><br></p>
+          <button id="opener2">Keep Reading</button>
+        </div>
+
+        <div class="modalBlackBackground" id="modal1">
+          <div id="dialog2">
+            <div class="grid">
+              <div class="carmenphoto">
+                <img class="carmenModal" src="/media/images/victor.PNG">
+              </div>
+              <br> 
+              <div class="carmentext">
+                <b>Name:</b> Victor Yu <br><br>
+                <b>Age:</b> 17 <br><br>
+                <b>Hometown: </b> Pittsburgh, PA <br><br>
+                <b>School: </b> North Allegheny Senior High School <br><br>
+                <b>Fun Fact: </b> I've never played Fortnite <br><br>
+                <b>Email:</b> victor@peerlift.org
+                <!-- <b>Facebook:</b> <br> https://www.facebook.com/victor.yu.7528610 --> 
+              </div>
+              <div id="saPara">
+                I was originally born in an low-income neighborhood, where there was little to no support when it came to providing students with resources they would need to succeed in their high school and college years. I am now fortunate enough to be living in a middle-class area, where I have realized how lucky I am to be in this position of helping fellow students. At the same time, it is often frustrating knowing that there are bright, young teenagers that are not able to reach their full potential simply because of where they grew up. <br>
+                As the Associate Director of Outreach, it is my job to make sure that students are able to have access to all the opportunities they need to be successful. I've made so many new friends and learned so many important values during my time representing Peerlift and encourage anyone who has a passion for education to sign up for the outreach program. I am in charge of the interviews so you'll be talking to me if you do sign up
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="rightarrow" onclick="myFunction(slideIndex+1)"></button> 
+    </div>
+
+    <br><br><br>
+
+    <div class="joinbott">
+      <div class="jointoday">
+        <h1 id="jointoday">Join our team today.</h1>
+        <h2 id="public">Join 141 other public high school students now.</h2>
+        <button class="jointoday" id="applynow" onclick="openInNewTab('https://peerlift.typeform.com/to/V0fHCc')">Apply Now</button>
+      </div>
+      <div id="rocket">
+        <img id="rocketlogo" src="/media/images/Asset6@4x.png">
+      </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="footer-section">
+      <div class="container">
+        <ul class="socialmedia">
+          <li><a href="https://www.facebook.com/peersoverprofit/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+          <li><a href="index.html"><img src="media/logo/whiteIcon.png"></a></li>
+          <li><a href="mailto:contact@peerlift.org" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
+        </ul>
+        <div class="footer-nav-wrapper">
+          <nav class="footer-nav">
+            <ul>
+              <li>Our Organization</li>
+              <hr>
+              <a href="index.html#mission"><li>Mission</li></a>
+              <a href="team.html"><li>Our Team</li></a>
+              <a href="getinvolved.html"><li>Get Involved</li></a>
+              <a href="donate.html"><li>Donate</li></a>
+            </ul>
+          </nav>
+          <nav class="footer-nav">
+            <ul>
+              <li>Opportunities</li>
+              <hr>
+              <a href="awards.html"><li>Awards</li></a>
+              <a href="flyins.html"><li>College Fly-Ins</li></a>
+              <a href="internships.html"><li>Internships</li></a>
+              <a href="scholarships.html"><li>Scholarships</li></a>
+              <a href="studyabroad.html"><li>Study Abroad</li></a>
+              <a href="summerprograms.html"><li>Summer Programs</li></a>
+            </ul>
+          </nav>
+        </div>
+        <p>Peerlift is an official 501(c)(3) nonprofit. Your donation is tax-deductible.</p>
+      </div>
+    </div>
+
+
+</body>
+<script>
+  // INTERACTIVE SLIDER JS
+
+  var slideIndex = 0;
+  var x = window.matchMedia("(min-width: 504px)");
+  myFunction(slideIndex); // Call listener function at run time
+  x.addListener(myFunction); // Attach listener function on state changes
+
+
+  function show3Slides(n) {
+    //	alert(n); 
+
+    var i;
+    var SAs = document.getElementsByClassName("SA");
+    slideIndex = n;
+    if (n >= SAs.length) {
+      slideIndex = 0
+    };
+    if (n < 0) {
+      slideIndex = SAs.length - 1
+    };
+    for (i = 0; i < SAs.length; i++) {
+      SAs[i].style.display = "none";
+    }
+
+    SAs[slideIndex].style.display = "block";
+    var display2 = slideIndex + 1;
+    if (display2 >= SAs.length) {
+      display2 = display2 - SAs.length;
+    }
+    SAs[display2].style.display = "block";
+    var display3 = display2 + 1;
+    if (display3 >= SAs.length) {
+      display3 = display3 - SAs.length;
+    }
+    SAs[display3].style.display = "block";
+    slideIndex = display3;
+
+  }
+
+  function showOneSlide(n) {
+    //alert(n); 
+    var i;
+    var SAs = document.getElementsByClassName("SA");
+    slideIndex = n;
+    if (n >= SAs.length) {
+      slideIndex = 0
+    };
+    if (n < 0) {
+      slideIndex = SAs.length - 1
+    };
+    for (i = 0; i < SAs.length; i++) {
+      SAs[i].style.display = "none";
+    }
+
+    SAs[slideIndex].style.display = "block";
+  }
+
+  function myFunction(position) {
+    if (x.matches) { // If media query matches
+
+      show3Slides(position);
+
+    } else {
+
+      showOneSlide(position);
+
+    }
+
+  }
+
+
+  function openInNewTab(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+  }
+
+  // DROPDOWN MENU
+  /* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+  function openMenu() {
+    // alert("toggle");
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    // alert(e.target);
+    if (document.documentElement.clientWidth < 504) {
+      if (!e.target.matches('.3bars')) {
+        var myDropdown = document.getElementById("myDropdown2");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    } else {
+      if (!e.target.matches('.opportunities')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  function openMenu2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+  }
+	
+	
+	
+	/* jQuery UI dialog clickoutside */
+
+	/*
+	The MIT License (MIT)
+
+	Copyright (c) 2013 - AGENCE WEB COHERACTIO
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy of
+	this software and associated documentation files (the "Software"), to deal in
+	the Software without restriction, including without limitation the rights to
+	use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+	the Software, and to permit persons to whom the Software is furnished to do so,
+	subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+	FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+	COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+	IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+	CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	*/
+
+	$.widget( "ui.dialog", $.ui.dialog, {
+	  options: {
+	    clickOutside: false, // Determine if clicking outside the dialog shall close it
+	    clickOutsideTrigger: "" // Element (id or class) that triggers the dialog opening 
+	  },
+
+	  open: function() {
+	    var clickOutsideTriggerEl = $( this.options.clickOutsideTrigger );
+	    var that = this;
+	    
+	    if (this.options.clickOutside){
+	      // Add document wide click handler for the current dialog namespace
+	      $(document).on( "click.ui.dialogClickOutside" + that.eventNamespace, function(event){
+	        if ( $(event.target).closest($(clickOutsideTriggerEl)).length == 0 && $(event.target).closest($(that.uiDialog)).length == 0){
+	          that.close();
+	        }
+	      });
+	    }
+	    
+	    this._super(); // Invoke parent open method
+	  },
+	  
+	  close: function() {
+	    var that = this;
+	    
+	    // Remove document wide click handler for the current dialog
+	    $(document).off( "click.ui.dialogClickOutside" + that.eventNamespace );
+	    
+	    this._super(); // Invoke parent close method 
+	  },  
+
+	});
+
+</script>
+
+</html>
+

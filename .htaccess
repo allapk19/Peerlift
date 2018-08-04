@@ -1,0 +1,2 @@
+ErrorDocument 404 /error.html
+php_flag display_errors Off

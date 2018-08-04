@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+	<meta property="og:image" content="https://peerlift.org/img/Peerlift_FB_Logo.png" />
+	<meta property="og:description" content="We're a simple online platform and youth-driven 501(c)(3) nonprofit making access to high school opportunities faster and fairer than ever before. " />
+	<meta property="og:url"content="https://peerlift.org/index.html" />
+	<meta property="og:title" content="Peerlift" />
+  <title>Peerlift</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-104681104-1', 'auto');
+	  ga('send', 'pageview');
+      
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_org'] = 'B0XAZ';
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+        y="rec";g.shutdown=function(i,v){g(y,!1)};g.restart=function(i,v){g(y,!0)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+      })(window,document,window['_fs_namespace'],'script','user');
+  </script>
+  <style>
+      html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      
+      .ITSHeaderText {
+        width: 60%;
+        margin: 50px;
+        text-align: left;
+        padding: 0 5vw;
+      }
+      .ITSHeaderText h1 {
+        color: #4b4b4b;
+        padding: 5vh 0;
+      }
+      .ITSHeaderText p {
+        color: #737373;
+      }
+      .ITSHeaderText button, .ITSPage3Text button {
+        margin-top: 5vh;
+        background-color: #6393ce;
+        border: 0;
+        border-radius: 1vh;
+        color: white;
+        padding: 1.5vh 5vh;
+        font-size: calc(1vh + 1vw);
+        font-family: 'League Spartan';
+      }
+      .ITSHeaderPhoto {
+        width: 40%;
+        text-align: center;
+      }
+      .ITSHeaderPhoto img {
+          height: 75vh;
+      }
+      
+      .ITSPage1Text {
+        width: 60%;
+        margin: 50px;
+        text-align: left;
+        padding: 0 5vw;
+      }
+      .ITSPage1Text h1 {
+        color: #4b4b4b;
+        padding: 5vh 0;
+      }
+      .ITSPage1Text p {
+        color: #737373;
+      }
+      .ITSPage1Photo {
+        width: 40%;
+        text-align: center
+      }
+      .ITSPage1Photo img {
+          height: 60vh;
+      }
+      
+	  
+      .ITServePage2Header {
+        color: #4b4b4b;
+        padding: 15vh 5vh 5vh 5vh;
+        text-align: center;
+      }
+      .ITSPage2Text {
+        width: 50%;
+        margin: 50px;
+        text-align: left;
+        padding: 0 5vw;
+      }
+      .ITSPage2Text h1 {
+        color: #4b4b4b;
+        padding: 5vh 0;
+      }
+      .ITSPage2Text p {
+        color: #737373;
+      }
+      .ITSPage2Photo {
+		padding-top: 5vh;
+        width: 50%;
+        text-align: center
+      }
+	  
+	  .ITSPage2Photo img {
+        width:  70vh;
+        height: 45vh;
+        object-fit: cover;
+        border-radius: 5vh;
+      }
+      
+      .ITSPage3Text {
+        margin: 50px;
+        text-align: center;
+        padding: 0 5vw;
+      }
+      .ITSPage3Text h1 {
+        color: #4b4b4b;
+        padding: 5vh 0;
+      }
+      .ITSPage3Text p {
+        color: #737373;
+      }
+	  
+	  /* Style the header */
+      .headerScroll {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        padding: 10px 10px;
+        background: linear-gradient(90deg, rgba(251,180,200,1) 20%, rgba(213,155,201,1) 55%, rgba(154,134,197,1) 100%);
+      }
+
+
+      /* The sticky class is added to the header with JS when it reaches its scroll position */
+      .stickyScroll {
+        position: fixed;
+        top: 0;
+        width: 100%
+      }
+
+      /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+      .stickyScroll + .contentScroll {
+        padding-top: 102px;
+      }
+	  
+	  .ITSHeaderScrollPhoto {
+        width: 40%;
+      }
+	  
+	  .ITSHeaderScrollPhoto img {
+          width:  35vh;
+          padding-left: 5vw;
+      }
+	  
+      .ITSHeaderScrollPhoto1 {
+		padding-right: 15vh;
+		padding-left: 150vh;
+      }
+	  
+	  .ITSHeaderScrollPhoto1 img {
+        max-width:20%;
+	    height:auto;
+      }
+	  
+      @media screen and (min-width: 1024px) {
+          .ITServeHeader {
+            height: auto;
+            min-height: 90vh;
+            display: flex;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            align-items: center;
+            height: auto;
+          }
+          .ITServePage1 {
+            height: auto;
+            min-height: 90vh;
+            display: flex;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            align-items: center;
+            height: auto;
+            background-color: #edf1f7;
+          }
+          .ITServePage2 {
+            height: auto;
+            min-height: 45vh;
+            display: flex;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            align-items: center;
+            height: auto;
+            padding-bottom: 10vh;
+          }
+          .ITServePage3 {
+            height: auto;
+            min-height: 45vh;
+            padding: 15vh 0;
+            background-color: #edf1f7;
+          }
+          .ITSHeaderScrollPhoto {
+            padding-left: 15vh;
+          }
+      }
+      @media screen and (max-width: 1024px) {
+          .body > div > div {
+              width: 100%;
+              margin: 50px 0 100px 0;
+          }
+          .ITSPage2Photo img {
+              width: 100%;
+          }
+          .ITSHeaderText, .ITSPage1Text, .ITSPage2Text, .ITSPage3Text {
+            text-align: center;
+          }
+          .ITSPage2Text {
+              margin: 0 !important;
+          }
+          .ITServePage2Header {
+            padding: 10vh 5vw 2vh 5vw;
+          }
+          
+          .ITServePage1   { display: flex; flex-direction: column; }
+          .ITSPage1Photo  { order: 2; }
+          .ITSPage1Text  { order: 1; }
+          .ITServePage2   { display: flex; flex-direction: column; }
+          .ITSPage2Photo  { order: 2; }
+          .ITSPage2Text  { order: 1; }
+          .ITServePage3   { display: flex; flex-direction: column; }
+          .ITSPage3Photo  { order: 2; }
+          .ITSPage3Text  { order: 1; }
+      }
+	 
+	  
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <div class="container">
+      <a href="index.html"><img src="media/logo/grayText.png"></a>
+      <a id="menu-button"><i class="fa fa-search"></i></a>
+      <nav>
+        <ul>
+          <a id="loginMobile" href="login.html"><div>Sign Up / Login</div></a>
+          <a id="opportunities-dropdown"><li>Opportunities <i class="fa fa-caret-down"></i></li></a>
+          <div id="opportunities-menu">
+            <div class="column-wrapper">
+              <a href="awards.html">
+                  <i class="fa fa-trophy"></i>Awards
+              </a>
+              <a href="flyins.html">
+                  <i class="fa fa-plane"></i>College Fly-Ins
+              </a>
+              <a href="internships.html">
+                  <i class="fa fa-group"></i>Internships
+              </a>
+            </div>
+            <div class="column-wrapper">
+              <a href="scholarships.html">
+                  <i class="fa fa-money"></i>Scholarships
+              </a>
+              <a href="studyabroad.html">
+                  <i class="fa fa-map"></i>Study Abroad
+              </a>
+              <a href="summerprograms.html">
+                  <i class="fa fa-university"></i>Summer Programs
+              </a>
+            </div>
+          </div>
+          <a href="index.html#mission"><li>Mission</li></a>
+          <a href="team.html"><li>Our Team</li></a>
+          <a href="getinvolved.html"><li>Get Involved</li></a>
+          <a href="donate.html"><li>Donate</li></a>
+        </ul>
+      </nav>
+      <a id="loginBTN" href="login.html">
+        <button>Sign Up</button>
+      </a>
+    </div>
+  </div>
+	<div class="headerScroll" id="myHeaderScroll">
+  <div class="ITSHeaderScrollPhoto">
+          <img src="media/images/ITSLogo.png">
+        </div>
+	
+</div>
+  <div class="body">
+      <div class="ITServeHeader">
+        <div class="ITSHeaderText">
+          <h1>ITServe, meet Peerlift.</h1>
+          <p>Peerlift is a tech nonprofit that connects underresourced students to opportunities that make college possible. ITServe Alliance is the largest association of IT Services, Staffing, Consulting organizations. As a part of the Corporate Social Responsibility Program, ITServe has partnered with Peerlift to provide financial assistance in developing technologies for easy access of scholarships and outreach programs for low income, first generation students. Please donate at the link below. </p>
+		<form action="https://www.paypal.me/PeerliftITServe">
+          
+          <button>Donate Now</button>
+        </form>
+          
+        </div>
+        <div class="ITSHeaderPhoto">
+          <img src="media/images/itServePhone.png">
+        </div>
+      </div>
+	   <div class="ITServePage1">
+        <div class="ITSPage1Photo">
+          <img src="media/logo/darkIcon.png">
+        </div>
+        <div class="ITSPage1Text">
+          <h1>Students are struggling</h1>
+          <p>Fifteen million high school students face an average student to counselor ration of 491:1. Many cannot find opportunities like scholarships and internships for college. Even more aren't confident enough to apply.</p>
+        </div>
+      </div>
+      
+      <h1 class="ITServePage2Header">Where is the money going?</h1>
+      <div class="ITServePage2">
+        <div class="ITSPage2Photo">
+          <img src="media/images/presentation.jpg">
+        </div>
+        <div class="ITSPage2Text">
+          <h1>Outreach Events</h1>
+          <p>We want to help low-income, first generation students DIRECTLY through in-person outreach events in the low-income areas of the IT Serve chapter locations: Philadelphia, New Jersey, Detroit, Virginia, Chicago, Atlanta, Dallas, Houston, Tampa, Phoenix, Seattle, and the Bay Area.</p>
+
+          <p> At these events, we plan to give presentations about the college application process and give advice about specific programs and  career paths.</p>
+        </div>
+      </div>
+      <div class="ITServePage2">
+        <div class="ITSPage2Photo">
+          <img src="media/images/itServeTech.jpg">
+        </div>
+        <div class="ITSPage2Text">
+          <h1>Product Development</h1>
+          <p>1. We want to showcase local opportunities through web scraping and filtering algorithms. </p>
+		  <p> 2. We want to create Peerlift portals for schools in which students can use their accounts and connect with peers and mentors    </p>
+        </div>
+      </div>
+      
+      <div class="ITServePage3">
+        <div class="ITSPage3Text">
+          <h1>ITServe, we need your help.</h1>
+          <p>Help us raise money to grow and impact students.</p>
+          <form action="https://www.paypal.me/PeerliftITServe">
+          
+          <button>Donate Now</button>
+        </form>
+        </div>
+      </div>
+  </div>
+  <div class="footer-section">
+    <div class="container">
+      <ul class="socialmedia">
+        <li><a href="https://www.facebook.com/peersoverprofit/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="index.html"><img src="media/logo/whiteIcon.png"></a></li>
+        <li><a href="mailto:contact@peerlift.org" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
+      </ul>
+      <div class="footer-nav-wrapper">
+        <nav class="footer-nav">
+          <ul>
+            <li>Our Organization</li>
+            <hr>
+            <a href="index.html#mission"><li>Mission</li></a>
+            <a href="team.html"><li>Our Team</li></a>
+            <a href="getinvolved.html"><li>Get Involved</li></a>
+            <a href="donate.html"><li>Donate</li></a>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul>
+            <li>Opportunities</li>
+            <hr>
+            <a href="awards.html"><li>Awards</li></a>
+            <a href="flyins.html"><li>College Fly-Ins</li></a>
+            <a href="internships.html"><li>Internships</li></a>
+            <a href="scholarships.html"><li>Scholarships</li></a>
+            <a href="studyabroad.html"><li>Study Abroad</li></a>
+            <a href="summerprograms.html"><li>Summer Programs</li></a>
+          </ul>
+        </nav>
+      </div>
+      <p>Peerlift is an official 501(c)(3) nonprofit. Your donation is tax-deductible.</p>
+    </div>
+  </div>
+	
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+  <script src="firebase.js"></script>
+	<script> // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var headerScroll = document.getElementById("myHeaderScroll");
+
+// Get the offset position of the navbar
+var sticky = headerScroll.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    headerScroll.classList.add("stickyScroll")
+  } else {
+    headerScroll.classList.remove("stickyScroll");
+  }
+} </script>
+    
+</body>
+	
+
+</html>
+
+
+
+

@@ -1,0 +1,2150 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700");
+@font-face {
+  font-family: 'League Spartan';
+  src: url("media/fonts/leaguespartan.otf"); }
+/* Color Palette */
+html, body, div, p, h1, h2, h3, h4, h5, h6, #navbar ul, #opportunity-navbar ul, .footer-section .socialmedia, .footer-nav ul, .member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris, .anitra {
+  padding: 0px;
+  margin: 0px; }
+
+div, #opportunities form, #opportunities form .column-wrapper > *, #opportunities form .footer-nav-wrapper > *, #opportunities form select, #opportunities form textarea {
+  box-sizing: border-box; }
+
+.header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+  height: auto;
+  min-height: 100vh;
+  width: auto;
+  min-width: 100vw; }
+
+html, body, #opportunities form .column-wrapper input[type="text"], #opportunities form .footer-nav-wrapper input[type="text"], #opportunities form select, #opportunities form textarea {
+  font-size: 16px; }
+  @media screen and (min-width: 760px) {
+    html, body, #opportunities form .column-wrapper input[type="text"], #opportunities form .footer-nav-wrapper input[type="text"], #opportunities form select, #opportunities form textarea {
+      font-size: 20px; } }
+  @media screen and (min-width: 1200px) {
+    html, body, #opportunities form .column-wrapper input[type="text"], #opportunities form .footer-nav-wrapper input[type="text"], #opportunities form select, #opportunities form textarea {
+      font-size: 24px; } }
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html, body {
+  font-family: "Nunito Sans", sans-serif; 
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "League Spartan", sans-serif; 
+  font-weight: 400; }
+
+a {
+  color: #23282d;
+  text-decoration: none; }
+
+a:hover {
+  color: #6393ce; }
+
+button:focus {
+  outline: 0; }
+
+#navbar, #opportunity-navbar {
+  position: relative;
+  top: 0px;
+  background-color: #F2F1EF;
+  height: 100px;
+  width: 100%;
+  padding: 25px 12.5px;
+  z-index: 101; }
+  #navbar .container, #opportunity-navbar .container {
+    height: 100%;
+    text-align: right; }
+    #navbar .container > a, #opportunity-navbar .container > a {
+      display: inline-block;
+      width: auto;
+      height: 100%;
+      padding: 0px 12.5px 25px 12.5px;
+      font-size: 30px;
+      color: #6393ce; }
+    #navbar .container > a:first-child, #opportunity-navbar .container > a:first-child {
+      float: left; }
+  #navbar img, #opportunity-navbar img {
+    max-height: 100%; }
+  @media screen and (max-width: 1023px) {
+    #navbar nav, #opportunity-navbar nav {
+      display: none; } }
+  @media screen and (min-width: 1024px) {
+    #navbar nav, #opportunity-navbar nav {
+      display: inline-block; } }
+  #navbar ul, #opportunity-navbar ul {
+    list-style-type: none;
+    text-align: center; }
+    @media screen and (max-width: 1023px) {
+      #navbar ul li, #opportunity-navbar ul li {
+        display: block;
+        padding: 10px 0px; } }
+    @media screen and (min-width: 1024px) {
+      #navbar ul li, #opportunity-navbar ul li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 1vw; } }
+
+#opportunity-navbar {
+  position: fixed; }
+
+#menu-button i {
+  vertical-align: bottom; }
+@media screen and (min-width: 1024px) {
+  #menu-button {
+    display: none !important; } }
+
+@media screen and (max-width: 1024px) {
+  #opportunities-dropdown {
+    display: none !important; } }
+@media screen and (min-width: 1024px) {
+  #opportunities-dropdown {
+    display: inline-block !important; } }
+
+#opportunities-menu {
+  padding: 2.5vh 0px; }
+  #opportunities-menu a {
+    display: block;
+    float: left;
+    box-sizing: border-box; }
+    #opportunities-menu a i {
+      display: block;
+      background-color: #6393ce;
+      color: white; 
+      max-height: 55px; }
+  #opportunities-menu a:hover {
+    color: #6393ce; }
+  #opportunities-menu a:hover > i {
+    background-color: #4675b8; }
+  @media screen and (max-width: 1024px) {
+    #opportunities-menu a {
+      padding: 2.5vh 7.5px !important;
+      font-size: 12px; }
+      #opportunities-menu a i {
+        padding: 1vh 15px 2vh 15px;
+        margin: 0px auto 1.5vh auto;
+        width: calc(100% - 40px);
+        border-radius: 7.5px;
+        font-size: 40px; }
+        #opportunities-menu a i img {
+          max-height: 60px; } }
+  @media screen and (min-width: 1024px) {
+    #opportunities-menu {
+      display: none;
+      background-color: #4b4b4b;
+      position: absolute;
+      width: 100vw;
+      top: 100px;
+      right: 0px;
+      padding: calc(1vh + 1vw) 0px; }
+      #opportunities-menu .column-wrapper, #opportunities-menu .footer-nav-wrapper {
+        margin: 0px -1.5px;
+        display: inline-block;
+        width: 40%; }
+      #opportunities-menu a {
+        font-size: 1vw;
+        color: white; }
+        #opportunities-menu a i {
+          font-size: 5vw;
+          margin: auto;
+          padding: 1vw 0 3vw 0;
+          border-radius: .5vw;
+          margin-bottom: calc(1vh + 1vw); }
+          #opportunities-menu a i img {
+            max-height: 75px; } }
+.opportunity-icon > div > div {
+  height: 85%;
+  margin: auto;
+  padding-top: 15%;
+}
+.awards-img {
+  content: url(media/images/icons/awards.png);
+}
+.flyins-img {
+  content: url(media/images/icons/flyins.png);
+}
+.internships-img {
+  content: url(media/images/icons/internships.png);
+}
+.scholarships-img {
+  content: url(media/images/icons/scholarships.png);
+}
+.studyabroad-img {
+  content: url(media/images/icons/studyAbroad.png);
+}
+.summerprograms-img {
+  content: url(media/images/icons/summerPrograms.png);
+}
+
+.navbar-margin {
+  margin-top: 100px; }
+
+.display-menu {
+  display: block !important;
+  height: calc(100vh - 100px);
+  width: 100vw;
+  background-color: #F2F1EF;
+  margin-left: -12.5px !important;
+  overflow-y: scroll; }
+  @media screen and (min-width: 760px) {
+    .display-menu {
+      margin: 0px calc(-5vw) !important; } }
+
+.header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+  color: white;
+  padding-top: 37.5vh;
+  position: relative; }
+  @media screen and (min-width: 760px) {
+    .header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+      padding-top: 45vh; } }
+
+@supports (display: grid) {
+  .header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+    padding-top: 0px;
+    display: grid;
+    align-content: center; } }
+.content-section, .opportunities, .mission, .picture, .no-picture, .coalition, .ambassadors, .grassroots, .representatives, .pageviews, .donation, .pledge, .opportunity, .opportunity-alt {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 10vh 15px;
+  text-align: center;
+  background-color: white;
+  color: #4b4b4b; }
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  text-align: center; }
+  @media screen and (min-width: 760px) {
+    .container {
+      max-width: 90vw; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 80vw; } }
+  .container > img {
+    margin-top: 3.5vh;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover; }
+  .container h1 {
+    font-size: calc(3vh + 3vw);
+    padding: calc(0.25 * (3vh + 3vw)); }
+    @media screen and (min-width: 760px) {
+      .container h1 {
+        padding: calc(0.25 * (2vh + 2vw));
+        font-size: calc(2vh + 2vw); } }
+  .container h2 {
+    font-size: calc(2vh + 2vw);
+    padding: calc(0.33 * (2vh + 2vw)); }
+    @media screen and (min-width: 760px) {
+      .container h2 {
+        padding: calc(0.33 * (1.25vh + 1.25vw));
+        font-size: calc(1.25vh + 1.25vw); } }
+  .container h3 {
+    font-size: calc(1vh + 1.5vw);
+    padding: calc(0.5 * (1.5vh + 1.5vw)); }
+    @media screen and (min-width: 760px) {
+      .container h3 {
+        padding: calc(0.5 * (1vh + 1vw));
+        font-size: calc(1vh + 1vw); } }
+
+.scroll-arrow {
+  font-size: 50px;
+  color: inherit;
+  position: absolute;
+  bottom: 5vh; 
+  left: 50%; }
+
+.scroll-arrow:hover {
+  color: #4b4b4b; }
+
+.column-wrapper, .footer-nav-wrapper {
+  width: 100%;
+  overflow: hidden; }
+  .column-wrapper > div, .footer-nav-wrapper > div {
+    float: left; }
+
+.n-cols-2, .footer-nav, fieldset ul {
+  padding: 15px;
+  width: 50% !important; }
+
+.n-cols-3, #opportunities-menu a {
+  padding: 15px;
+  width: 33.3333333333% !important; }
+
+.n-cols-2-tablet, #opportunities form .column-wrapper h4, #opportunities form .footer-nav-wrapper h4, #opportunities form .column-wrapper input[type="text"], #opportunities form .footer-nav-wrapper input[type="text"], .tenet {
+  padding: 15px;
+  width: 100%; }
+  @media screen and (min-width: 760px) {
+    .n-cols-2-tablet, #opportunities form .column-wrapper h4, #opportunities form .footer-nav-wrapper h4, #opportunities form .column-wrapper input[type="text"], #opportunities form .footer-nav-wrapper input[type="text"], .tenet {
+      width: 50% !important; } }
+
+.n-cols-3-tablet, .opportunity-box, .member {
+  padding: 15px;
+  width: 100%; }
+  @media screen and (min-width: 760px) {
+    .n-cols-3-tablet, .opportunity-box, .member {
+      width: 33.3333333333% !important; } }
+
+.n-cols-6-tablet {
+  padding: 15px;
+  width: 100%; }
+  @media screen and (min-width: 760px) {
+    .n-cols-6-tablet {
+      width: 16.6666666667% !important; } }
+
+.footer-section {
+  padding: 5vh 15px;
+  background-color: #23282d; }
+
+.team-header-section {
+  background-image: url("media/backgrounds/team.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.getinvolved-header-section {
+  background-image: url("media/backgrounds/getinvolved.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.donate-header-section {
+  background-image: url("media/backgrounds/donate.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.opportunities {
+  background: white;
+  color: #737373; }
+  .opportunities h1, .opportunities h2, .opportunities h3, .opportunities h4, .opportunities h5, .opportunities h6 {
+    color: #4b4b4b; }
+
+.mission {
+  background: white;
+  color: white; }
+  .mission h1, .mission h2, .mission h3, .mission h4, .mission h5, .mission h6 {
+    color: white; }
+
+.picture {
+  background: white;
+  color: #4b4b4b; }
+  .picture h1, .picture h2, .picture h3, .picture h4, .picture h5, .picture h6 {
+    color: #4b4b4b; }
+
+.no-picture {
+  background: white;
+  color: #4b4b4b; }
+  .no-picture h1, .no-picture h2, .no-picture h3, .no-picture h4, .no-picture h5, .no-picture h6 {
+    color: #4b4b4b; }
+
+.coalition {
+  background: white;
+  color: #737373; }
+  .coalition h1, .coalition h2, .coalition h3, .coalition h4, .coalition h5, .coalition h6 {
+    color: #4b4b4b; }
+
+.ambassadors {
+  background: #6393ce;
+  color: white; }
+  .ambassadors h1, .ambassadors h2, .ambassadors h3, .ambassadors h4, .ambassadors h5, .ambassadors h6 {
+    color: white; }
+
+.grassroots {
+  background: #66cc99;
+  color: white; }
+  .grassroots h1, .grassroots h2, .grassroots h3, .grassroots h4, .grassroots h5, .grassroots h6 {
+    color: white; }
+
+.representatives {
+  background: white;
+  color: #737373; }
+  .representatives h1, .representatives h2, .representatives h3, .representatives h4, .representatives h5, .representatives h6 {
+    color: #4b4b4b; }
+
+.pageviews {
+  background: #23282d;
+  color: white; }
+  .pageviews h1, .pageviews h2, .pageviews h3, .pageviews h4, .pageviews h5, .pageviews h6 {
+    color: white; }
+
+.donation {
+  background: #6393ce;
+  color: white; }
+  .donation h1, .donation h2, .donation h3, .donation h4, .donation h5, .donation h6 {
+    color: white; }
+
+.pledge {
+  background: white;
+  color: #737373; }
+  .pledge h1, .pledge h2, .pledge h3, .pledge h4, .pledge h5, .pledge h6 {
+    color: #4b4b4b; }
+
+.awards-menu-icon {
+  color: white; }
+
+.flyins-menu-icon {
+  color: white; }
+
+.internships-menu-icon {
+  color: white; }
+
+.scholarships-menu-icon {
+  color: white; }
+
+.studyabroad-menu-icon {
+  color: white; }
+
+.summerprograms-menu-icon {
+  color: white; }
+
+.footer-section {
+  color: #aaa; }
+  .footer-section a {
+    color: white; }
+  .footer-section .socialmedia {
+    list-style-type: none; }
+    .footer-section .socialmedia a {
+      cursor: inherit; }
+    .footer-section .socialmedia a *:hover {
+      color: #6393ce;
+      cursor: pointer; }
+    .footer-section .socialmedia li {
+      display: inline-block;
+      height: 10vh;
+      padding: 0px 1vh;
+      font-size: 5vh; }
+      .footer-section .socialmedia li i {
+        position: relative;
+        bottom: 33%; }
+      .footer-section .socialmedia li img {
+        height: 100%; }
+  .footer-section p {
+    font-size: 12px; }
+    @media screen and (min-width: 760px) {
+      .footer-section p {
+        font-size: 20px; } }
+
+.footer-nav-wrapper {
+  margin: -2.5vh auto 2.5vh auto; }
+  @media screen and (min-width: 760px) {
+    .footer-nav-wrapper {
+      width: 50%;
+      max-width: 500px; } }
+
+.footer-nav {
+  text-align: left;
+  box-sizing: border-box;
+  float: left;
+  font-size: 12px; }
+  @media screen and (min-width: 760px) {
+    .footer-nav {
+      font-size: 20px; } }
+  .footer-nav ul {
+    list-style-type: none; }
+    .footer-nav ul > li {
+      font-weight: bold;
+      letter-spacing: 0.5px; }
+  .footer-nav a:hover {
+    color: #6393ce; }
+
+/* Index */
+.index-header-section > video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 10;
+  margin-top: -37.5vh; }
+  @media screen and (min-width: 760px) {
+    .index-header-section > video {
+      margin-top: -45vh; } }
+.index-header-section > .container {
+  margin: auto;
+  z-index: 11; }
+  .index-header-section > .container > img {
+    height: 10vh; }
+  .index-header-section > .container h2 {
+    font-family: "Nunito Sans";
+    padding: 2.5vh 0px; }
+
+@supports (display: grid) {
+  .index-header-section > video {
+    margin-top: 0px; 
+    z-index: -100; } }
+.opportunity-box {
+  padding: calc(0.75vw + 0.75vh) 0px; }
+  .opportunity-box > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box; }
+
+.opportunity-box:hover {
+  background-color: #eee; }
+  .opportunity-box:hover > a > div {
+    border-color: #4675b8; }
+    .opportunity-box:hover > a > div > div {
+      background-color: #4675b8; }
+
+.opportunity-icon {
+  margin: 2.5vh auto;
+  width: 40vw;
+  height: 40vw;
+  font-size: 20vw;
+  border-radius: 50%;
+  border: 2.5px solid #6393ce;
+  background-color: transparent;
+  padding: 5px; }
+  .opportunity-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .opportunity-icon > i {
+    margin-top: 10vw; }
+  @media screen and (min-width: 760px) {
+    .opportunity-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .opportunity-icon > i {
+        margin-top: 3.75vw; } }
+  @media screen and (min-width: 1024px) {
+    .opportunity-icon {
+      width: 10vw;
+      height: 10vw;
+      font-size: 5vw; }
+      .opportunity-icon > i {
+        margin-top: 2.5vw; } }
+
+.opportunity-icon-general, .awards-icon, .flyins-icon, .internships-icon, .scholarships-icon, .studyabroad-icon, .summerprograms-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6393ce;
+  color: white;
+  font-size: inherit; }
+  .opportunity-icon-general > i, .awards-icon > i, .flyins-icon > i, .internships-icon > i, .scholarships-icon > i, .studyabroad-icon > i, .summerprograms-icon > i {
+    margin-top: 25%; }
+
+#opportunities button {
+  background-color: #6393ce;
+  border: 0;
+  border-radius: 2vh;
+  margin: 10vh 0px 5vh 0px;
+  padding: 2vh 4vh; }
+  #opportunities button h3 {
+    color: white; }
+
+#opportunities button:hover {
+  cursor: pointer; }
+
+#opportunities form {
+  display: none;
+  position: relative;
+  background-color: #F2F1EF;
+  border-radius: 2.5vh;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  padding-top: 22.5px; }
+  #opportunities form > * {
+    width: 100%;
+    margin-top: 2.5vh; }
+  #opportunities #dropdowns > * {
+    width: 100%;
+    margin-top: 2.5vh; }
+  #opportunities form h4 {
+    text-align: left;
+    color: #737373; }
+  #opportunities form button {
+    width: auto;
+    margin-bottom: 2.5vh; }
+  #opportunities form .fa-times, #opportunities form span {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: auto;
+    font-size: 35px;
+    color: #ccc; }
+  #opportunities form span {
+    font-size: 20px;
+    top: auto;
+    bottom: 0px; }
+  #opportunities form .fa-times:hover, #opportunities form span:hover {
+    cursor: pointer;
+    color: #737373; }
+  #opportunities form .column-wrapper, #opportunities form .footer-nav-wrapper {
+    margin-top: 0px; }
+    #opportunities form .column-wrapper > *, #opportunities form .footer-nav-wrapper > * {
+      float: left; }
+    #opportunities form .column-wrapper h4, #opportunities form .footer-nav-wrapper h4 {
+      padding-left: 0px; }
+      @media screen and (min-width: 760px) {
+        #opportunities form .column-wrapper h4, #opportunities form .footer-nav-wrapper h4 {
+          width: 30% !important; } }
+    #opportunities form .column-wrapper input[type="text"], #opportunities form .footer-nav-wrapper input[type="text"] {
+      display: block;
+      background-color: inherit;
+      border: 0;
+      border-bottom: 2px solid #ccc;
+      color: #737373;
+      padding: 5px; }
+      @media screen and (min-width: 760px) {
+        #opportunities form .column-wrapper input[type="text"], #opportunities form .footer-nav-wrapper input[type="text"] {
+          width: 70% !important; } }
+    #opportunities form .column-wrapper input[type="text"]:focus, #opportunities form .footer-nav-wrapper input[type="text"]:focus {
+      outline: 0;
+      border-bottom: 2px solid #6393ce; }
+  #opportunities form select, #opportunities form textarea {
+    border: 2px solid #ccc;
+    border-radius: 1.5vh;
+    color: #4b4b4b;
+    padding: 0.5vh 1vh; }
+  #opportunities form select {
+    border: 1px solid #ccc; }
+  #opportunities form textarea {
+    height: auto;
+    min-height: 20vh; }
+  #opportunities form select:focus, #opportunities form textarea:focus {
+    outline: 0;
+    border: 2px solid #6393ce; }
+  @media screen and (min-width: 760px) {
+    #opportunities form {
+      padding: 5vh;
+      padding-top: 7.5vh; }
+      #opportunities form .fa-times {
+        top: 2vh;
+        right: 5vh; }
+      #opportunities form span {
+        bottom: 2vh;
+        right: 5vh; }
+      #opportunities form input[type="text"] {
+        margin-top: 10px; } }
+
+.mission {
+  height: calc(100vh - 100px);
+  padding: 0px; }
+
+.slide, #slide-left, #slide-right {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  height: calc(100vh - 100px);
+  padding: 5vw;
+  box-sizing: border-box;
+  font-size: 50px; }
+  .slide > i, #slide-left > i, #slide-right > i {
+    position: relative;
+    top: calc(50% - 25px); }
+
+.slide:hover, #slide-left:hover, #slide-right:hover {
+  color: #23282d; }
+
+#slide-left {
+  left: 0px; }
+
+#slide-right {
+  right: 0px; }
+
+.slider, .peersoverprofit, .studentdriven, .uniqueapproach, .provencontent {
+  display: none;
+  height: 100%; }
+  .slider .container, .peersoverprofit .container, .studentdriven .container, .uniqueapproach .container, .provencontent .container {
+    height: 100%;
+    padding: 0px 15px; }
+
+.peersoverprofit {
+  background-color: #6393ce; }
+
+.studentdriven {
+  background-color: #ff9942; }
+
+.uniqueapproach {
+  background-color: #2ab88e; }
+
+.provencontent {
+  background-color: #ff605d; }
+
+.peersoverprofit {
+  display: block; }
+
+.mission-graphics {
+  display: grid;
+  height: 40%;
+  align-content: center; }
+  .mission-graphics i {
+    font-size: 34vh;
+    display: block; }
+  .mission-graphics h1 {
+    font-size: 17vh;
+    margin-bottom: -5vh; }
+  .mission-graphics h2 {
+    font-size: 3.5vh; }
+
+.mission-text {
+  height: 30%; }
+  @media screen and (min-width: 760px) {
+    .mission-text h1 {
+      font-size: 5vh; }
+    .mission-text h2 {
+      font-size: 3.5vh; }
+    .mission-text p {
+      font-size: 2.5vh; } }
+  @supports not (display: grid) {
+    .mission-text {
+      padding-top: 8.5%; }
+      @media screen and (min-width: 760px) {
+        .mission-text {
+          padding-top: 5%; } } }
+  @supports (display: grid) {
+    .mission-text {
+      display: grid;
+      align-content: center; } }
+
+/* Our Team */
+.member h5 {
+  color: #6393ce; }
+.member p {
+  font-size: .65em;
+  margin-top: 2.5px; }
+@media screen and (max-width: 760px) {
+  .member h5 {
+    font-size: 16px; }
+  .member h6 {
+    font-size: 14px; }
+  .member p {
+    font-size: 12px; } }
+@supports (display: flex) {
+  .member > div {
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+.member > div a {
+  color: white;
+  font-size: 5vh; }
+  @media screen and (min-width: 760px) {
+    .member > div a {
+      font-size: 3.5vh; } }
+.member > div a:hover, .member > div a:active {
+  color: white; }
+.member > div i {
+  display: none;
+  padding: 2.5vh; }
+  @media screen and (min-width: 760px) {
+    .member > div i {
+      padding: 1vh; } }
+.member > div .fa-twitter:hover, .member > div .fa-twitter:active {
+  color: #0084b4; }
+.member > div .fa-facebook:hover, .member > div .fa-facebook:active {
+  color: #3B5998; }
+.member > div .fa-linkedin:hover, .member > div .fa-linkedin:active {
+  color: #0077B5; }
+.member > div .fa-instagram:hover, .member > div .fa-instagram:active {
+  color: #4675b8; }
+.member > div .fa-envelope:hover, .member > div .fa-envelope:hover {
+  color: #4675b8; }
+.member > div:hover i, .member > div:active i {
+  display: inline-block; }
+
+.member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris, .anitra {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  border: 10px solid #eee; }
+  .member-general > img, .sam > img, .sravya > img, .alvin > img, .jerry > img, .julie > img, .neha > img, .praneeth > img, .will > img, .amira > img, .basil > img, .sofia > img, .chris > img, .anitra > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .member-general > i, .sam > i, .sravya > i, .alvin > i, .jerry > i, .julie > i, .neha > i, .praneeth > i, .will > i, .amira > i, .basil > i, .sofia > i, .chris > i, .anitra > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris, .anitra {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .member-general > i, .sam > i, .sravya > i, .alvin > i, .jerry > i, .julie > i, .neha > i, .praneeth > i, .will > i, .amira > i, .basil > i, .sofia > i, .chris > i, .anitra > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris, .anitra {
+      width: 17.5vw;
+      height: 17.5vw;
+      font-size: 8.75vw; }
+      .member-general > i, .sam > i, .sravya > i, .alvin > i, .jerry > i, .julie > i, .neha > i, .praneeth > i, .will > i, .amira > i, .basil > i, .sofia > i, .chris > i, .anitra > i {
+        margin-top: 4.375vw; } }
+
+.sam {
+  background: url("media/images/team/sam.png");
+  background-size: cover; }
+
+.sam:hover, .sam:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sam.png");
+  background-size: cover; }
+
+.sravya {
+  background: url("media/images/team/sravya.png");
+  background-size: cover; }
+
+.sravya:hover, .sravya:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sravya.png");
+  background-size: cover; }
+
+.alvin {
+  background: url("media/images/team/alvin.png");
+  background-size: cover; }
+
+.alvin:hover, .alvin:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/alvin.png");
+  background-size: cover; }
+
+.jerry {
+  background: url("media/images/team/jerry.png");
+  background-size: cover; }
+
+.jerry:hover, .jerry:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/jerry.png");
+  background-size: cover; }
+
+.julie {
+  background: url("media/images/team/julie.png");
+  background-size: cover; }
+
+.julie:hover, .julie:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/julie.png");
+  background-size: cover; }
+
+.neha {
+  background: url("media/images/team/neha.png");
+  background-size: cover; }
+
+.neha:hover, .neha:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/neha.png");
+  background-size: cover; }
+
+.praneeth {
+  background: url("media/images/team/praneeth.png");
+  background-size: cover; }
+
+.praneeth:hover, .praneeth:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/praneeth.png");
+  background-size: cover; }
+
+.will {
+  background: url("media/images/team/will.png");
+  background-size: cover; }
+
+.will:hover, .will:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/will.png");
+  background-size: cover; }
+
+.amira {
+  background: url("media/images/team/amira.png");
+  background-size: cover; }
+
+.amira:hover, .amira:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/amira.png");
+  background-size: cover; }
+
+.basil {
+  background: url("media/images/team/basil.png");
+  background-size: cover; }
+
+.basil:hover, .basil:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/basil.png");
+  background-size: cover; }
+
+.sofia {
+  background: url("media/images/team/sofia.png");
+  background-size: cover; }
+
+.sofia:hover, .sofia:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sofia.png");
+  background-size: cover; }
+
+.chris {
+  background: url("media/images/team/chris.png");
+  background-size: cover; }
+
+.chris:hover, .chris:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/chris.png");
+  background-size: cover; }
+
+.anitra {
+  background: url("media/images/team/anitra.png");
+  background-size: cover; }
+
+.anitra:hover, .anitra:active {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/anitra.png");
+  background-size: cover; }
+
+.divider {
+  width: calc(100% - 30px); }
+
+/* Get Involved */
+.get-involved-padding, .coalition, .ambassadors, .grassroots {
+  padding-bottom: 15vh; }
+
+.getinvolved-icon, .ambassadors-icon, .grassroots-icon {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  border: 10px solid white; }
+  .getinvolved-icon > img, .ambassadors-icon > img, .grassroots-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .getinvolved-icon > i, .ambassadors-icon > i, .grassroots-icon > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .getinvolved-icon, .ambassadors-icon, .grassroots-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .getinvolved-icon > i, .ambassadors-icon > i, .grassroots-icon > i {
+        margin-top: 10vh; } }
+  @media screen and (min-width: 1024px) {
+    .getinvolved-icon, .ambassadors-icon, .grassroots-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .getinvolved-icon > i, .ambassadors-icon > i, .grassroots-icon > i {
+        margin-top: 10vh; } }
+  .getinvolved-icon + button, .ambassadors-icon + button, .grassroots-icon + button {
+    border: 0px;
+    border-radius: 2vh;
+    box-shadow: 2.5px 2.5px 2.5px #23282d;
+    margin: 2.5vh 0px;
+    padding: 1vh;
+    width: calc(15vw + 15vh); }
+
+.ambassadors-icon {
+  background-color: #BFD7F4;
+  color: #265EA1; }
+  .ambassadors-icon + button {
+    background-color: #265EA1; }
+  .ambassadors-icon + button:hover {
+    background-color: #BFD7F4; }
+    .ambassadors-icon + button:hover h2 {
+      color: #265EA1; }
+
+.grassroots-icon {
+  background-color: #C7F4DD;
+  color: #279E62; }
+  .grassroots-icon + button {
+    background-color: #279E62; }
+  .grassroots-icon + button:hover {
+    background-color: #C7F4DD; }
+    .grassroots-icon + button:hover h2 {
+      color: #279E62; }
+
+/* Donate */
+@supports not (display: grid) {
+  .donate-header-section {
+    padding-top: 30vh; }
+    @media screen and (min-width: 760px) {
+      .donate-header-section {
+        padding-top: 37.5vh; } } }
+.donate-header-section p {
+  margin: 5vh 0px 2.5vh 0px; }
+
+#donate-button {
+  background-color: white;
+  border: 0px;
+  border-radius: 5vh;
+  padding: 2.5vh; }
+  #donate-button > input {
+    display: block;
+    width: 20vh; }
+
+a[href="#donate"] {
+  position: absolute;
+  top: 167vh;
+  right: -3.5vh;
+  z-index: 11;
+  transform: rotate(270deg); }
+  a[href="#donate"] > button {
+    background-color: #F2F1EF;
+    opacity: 0.9;
+    border: 0px;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    box-shadow: 0 0 0.5vh #737373;
+    color: #6393ce;
+    font-family: 'League Spartan';
+    font-size: 2.5vh;
+    padding: 1vh; }
+
+.pledge form button {
+  background-color: white;
+  border: 0px; }
+
+.pledge form button:hover {
+  cursor: pointer; }
+
+.donate-icon {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  border: 10px solid #F2F1EF; }
+  .donate-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .donate-icon > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .donate-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .donate-icon > i {
+        margin-top: 10vh; } }
+  @media screen and (min-width: 1024px) {
+    .donate-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .donate-icon > i {
+        margin-top: 10vh; } }
+
+.tenet {
+  padding: 1.5vh 2.5vw; }
+  .tenet h2 {
+    color: #6393ce; }
+
+#opportunity-navbar + .body {
+  padding-top: 100px; }
+
+@media screen and (max-width: 1023px), screen and (orientation: portrait) {
+  .body > button {
+    position: fixed;
+    top: 67vh;
+    left: -8.25vh;
+    z-index: 11;
+    transform: rotate(90deg);
+    opacity: 0.9;
+    border: 0px;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    box-shadow: 0 0 0.5vh #737373;
+    background-color: #F2F1EF;
+    color: #4b4b4b;
+    font-family: 'League Spartan';
+    font-size: 2.5vh;
+    letter-spacing: .5px;
+    padding: 1vh 3.5vh;
+    width: 20vh; } }
+@media screen and (min-width: 1024px) {
+  .body > button {
+    display: none; } }
+
+@media screen and (max-width: 1023px), screen and (orientation: portrait) {
+  #filter-button {
+    background-color: #4b4b4b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 100px;
+    height: 55px; }
+  #filter-button i {
+      margin-left: 1.5vh; }
+  #opportunity-navbar + .body {
+    padding-top: 155px; } }
+@media screen and (min-width: 1024px) {
+  #filter-button {
+      display: none; } }
+
+#filter-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  top: 100px;
+  height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  width: 25%;
+  color: #aaa;
+  padding: 5vh 0px;
+  background-color: #23282d; }
+  #filter-menu a {
+    color: white; }
+  @media screen and (max-width: 1023px), screen and (orientation: portrait) {
+    #filter-menu {
+      display: none;
+      width: 100vw; } }
+
+@media screen and (max-width: 1023px), screen and (orientation: portrait) {
+  #filter-menu > .fa-times {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 35px;
+    color: white; } }
+@media screen and (min-width: 1024px) {
+  #filter-menu > .fa-times {
+    display: none; } }
+
+#filter-menu form {
+  text-align: left; }
+  #filter-menu form fieldset {
+    border: 0px; }
+  #filter-menu form h3 {
+    padding-bottom: 1vh; }
+  #filter-menu form hr {
+    margin: 0px;
+    border: 1px solid #aaa; }
+
+label:hover {
+  cursor: pointer; }
+
+input {
+  display: none; }
+
+input + label {
+  display: inline-block;
+  background-color: white;
+  color: #6393ce;
+  border-radius: 20%;
+  width: 24px;
+  height: 24px;
+  text-align: center; }
+  @media screen and (min-width: 760px) {
+    input + label {
+      width: 30px;
+      height: 30px; } }
+  @media screen and (min-width: 1200px) {
+    input + label {
+      width: 36px;
+      height: 36px; } }
+  input + label i {
+    vertical-align: middle; }
+  input + label .fa-check {
+    display: none; }
+
+input:checked + label {
+  background-color: #6393ce;
+  color: white; }
+  input:checked + label .fa-check {
+    display: inline-block; }
+
+input[name="grade"] + label {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  margin: 2vh 1vh 1vh 1vh; }
+  @media screen and (min-width: 760px) {
+    input[name="grade"] + label {
+      width: 36px;
+      height: 36px; } }
+  @media screen and (min-width: 1200px) {
+    input[name="grade"] + label {
+      width: 42px;
+      height: 42px; } }
+  input[name="grade"] + label h4 {
+    display: inline-block;
+    margin-top: 20%; }
+
+fieldset ul {
+  float: left;
+  padding: 1vh 0px 1vh 15px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none; }
+  fieldset ul li {
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 32px; }
+    @media screen and (min-width: 760px) {
+      fieldset ul li {
+        height: 40px; } }
+    @media screen and (min-width: 1200px) {
+      fieldset ul li {
+        height: 48px; } }
+
+input[type="button"] {
+  display: block;
+  margin: 3.5vh auto 50px auto;
+  width: 100%;
+  max-width: 300px;
+  padding: 2.5vh 0px;
+  background-color: white;
+  color: #6393ce;
+  font-family: 'League Spartan';
+  font-size: 24px;
+  border: 0;
+  border-radius: 1vh; }
+  @media screen and (min-width: 1024px) {
+    input[type="button"] {
+      display: none; } }
+
+.opportunity, .opportunity-alt {
+  padding: 5vh 0px;
+  color: white;
+  background-color: #6393ce;
+  overflow: auto; }
+  .opportunity a, .opportunity-alt a {
+    color: white; }
+  .opportunity i, .opportunity-alt i {
+    margin-left: 0.5em; }
+
+.opportunity a:hover, .opportunity-alt a:hover {
+  text-decoration: underline; }
+
+.opportunity > .container, .opportunity-alt > .container {
+  padding: 0px 15px; }
+  @media screen and (min-width: 1024px) {
+    .opportunity > .container, .opportunity-alt > .container {
+      width: 75%;
+      float: right;
+      padding: 0px 5vw; } }
+
+.opportunity-alt {
+  background-color: #4675b8; }
+
+@supports (display: flex) {
+  .flex-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0px 1vh; } }
+
+.grade, .selectivity, .deadline {
+  border-radius: 1vh;
+  width: calc(33.33% - 1.5vh); }
+
+@supports not (display: flex) {
+  .flex-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 0px .75vh; }
+
+  .grade, .selectivity, .deadline {
+    float: left;
+    margin: 0px .75vh; } }
+.grade {
+  background-color: #9a86c5; }
+
+.selectivity {
+  background-color: #d59bc9; }
+
+.deadline {
+  background-color: #fbb4c8; }
+
+.info {
+  background-color: #BFD7F4;
+  border-radius: 1vh;
+  margin: 2vh 1vh 7.5px 1vh;
+  padding: 2vh; }
+  .info p {
+    color: #23282d;
+    text-align: left;
+    height: auto;
+    max-height: 15vh;
+    overflow-y: hidden; }
+  .info h3 {
+    color: #4675b8;
+    padding: 15px 0px 0px 0px; }
+  .info h3:last-child {
+    display: none; }
+  @media screen and (min-width: 760px) {
+    .info p {
+      text-align: justify;
+      max-height: none;
+      overflow-y: auto; }
+    .info h3 {
+      display: none; } }
+
+.see-more {
+  max-height: none !important;
+  overflow-y: auto !important; }
+
+
+/* Logins */
+.addOpp {
+  background-color: #499b5d;
+  float: right;
+  color: white;
+  position: absolute;
+  width: 50%;
+  left: -50%;
+  text-align: center;
+}
+.addOpp > i {
+  margin-top: 70%;
+  font-size: 10vh;
+}
+.oppWrapper {
+  display: flex;
+}
+.oppWrapper > div {
+  padding-bottom: 100%;
+  margin-bottom: -97%;
+}
+#opportunitiesWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.swipeInstructions {
+  position: fixed;
+  top: 35%;
+  color: white;
+  text-align: center;
+  display: none;
+  padding: 0 2vh;
+}
+.swipeInstructions button {
+  background-color: #6393ce;
+  border: 0;
+  border-radius: 1vh;
+  margin: 5vh 0px 5vh 0px;
+  padding: 2vh 10vh;
+  color: white;
+}
+
+.loginPrompt {
+  position: fixed;
+  top: 35%;
+  color: white;
+  text-align: center;
+  display: none;
+  padding: 1vh 2vh;
+}
+.loginPrompt #signUp {
+  background-color: #6393ce;
+  border: 0;
+  border-radius: 1vh;
+  margin: 5vh 0px 0px 0px;
+  padding: 3vh 15vh;
+  color: white;
+}
+.loginPrompt #notNow {
+  background-color: #4b4b4b;;
+  border: 0;
+  border-radius: 1vh;
+  margin: 2vh 0px 5vh 0px;
+  padding: 1.5vh 7vh;
+  color: white;
+}
+
+.saved {
+  position: fixed;
+  top: 30%;
+  color: white;
+  text-align: center;
+  display: none;
+  padding: 0 2vh;
+}
+.saved button {
+  background-color: #4b4b4b;;
+  border: 0;
+  border-radius: 1vh;
+  margin: 2vh 0px 5vh 0px;
+  padding: 1.5vh 7vh;
+  color: white;
+}
+.saved img {
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container a button {
+  background-color: #6393ce;
+  border: 0;
+  border-radius: 1vh;
+  color: white;
+  padding: 1vh 4vh;
+  font-size: calc(1vh + 1vw);
+  font-family: 'League Spartan';
+}
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 9px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,.2);
+  -webkit-transform: translateY(-1px) scale(1.01);
+  transform: translateY(-1px) scale(1.01);
+}
+@media screen and (max-width: 1024px) {
+  #loginBTN {
+      display: none !important;
+  }
+  .myOpportunities {
+    padding: 0 15px 10vh 15px;
+  }
+  .signUpDiv ul h3 {
+      font-size: calc(1.60vh + 1.60vw);
+  }
+  .signUpDiv {
+      padding: 0 15px 10vh 15px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .signUpDiv ul {
+      position: relative;
+      left: 25%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .signUpDiv ul {
+      position: relative;
+      left: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #loginMobile div {
+    display: none !important; 
+  } 
+  .myOpportunities {
+    padding: 10vh 15px;
+  }
+  .signUpDiv .fa-caret-down {
+    display: none !important; 
+  }
+  .signUpDiv {
+      padding: 10vh 15px;
+  }
+}
+
+.signUpDiv .fa-caret-down {
+  display: block;
+  font-size: 5vh;
+  padding: 25px;
+}
+
+#loginMobile div {
+  background-color: #4b4b4b;
+  color: white;
+  padding: 20px 0;
+  font-family: "League Spartan";
+}
+
+.oppWrapper h2 {
+  display: inline;
+}
+.oppWrapper .fa-plus-circle {
+  display: none;
+  font-size: 5vh;
+}
+.oppWrapper .fa-check-circle {
+  font-size: 5vh;
+  color: #b0db8e;
+}
+
+#watchlist h3 {
+  color: #6393ce;
+  font-size: calc(1.5vh + 1.5vw);
+}
+#watchlist h3:hover {
+  cursor: pointer;
+  color: #4e77aa;
+}
+
+.watchItem {
+  background-color: #6393ce;
+  color: white;
+  border-radius: 2vh;
+  padding: 2vh;
+  margin: 5vh 0;
+}
+@media screen and (min-width: 1024px) {
+  .watchItem {
+      position: relative;
+      width: 75%;
+      left: 12.5%;
+  }
+}
+.watchItem img {
+  max-height: 60px;
+}
+.watchItem h4 {
+  font-family: "Nunito Sans";
+}
+.watchItem i {
+  position: absolute;
+  right: 4vh;
+  font-size: 3vh;
+}
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .watchItem i {
+      right: 8vh;
+  }
+}
+
+#noOpps {
+  display: none;
+}
+.emptyOpp h2 {
+  font-family: "Nunito Sans";
+}
+.emptyOpp a {
+  color: #6393ce
+}
+.emptyOpp {
+  position: relative;
+  display: inline-block;
+  border: 5px solid #6393ce;
+  border-radius: 15px;
+  padding: 5vh;
+  margin-top: 5vh;
+}
+.emptyOpp::before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  top: -5px;
+  left: 15%;
+}
+.emptyOpp::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  top: 15%;
+  left: -5px;
+}
+#signOut {
+  background-color: #4b4b4b;
+  border: 0;
+  border-radius: 1vh;
+  color: white;
+  padding: 1vh 4vh;
+  margin-top: 5vh;
+  font-size: calc(1vh + 1vw);
+  font-family: 'League Spartan';
+}
+
+.signUpDiv ul {
+  list-style-type: none;
+  text-align: left;
+}
+.signUpDiv ul i {
+  color: #6393ce;
+  font-size: 5vh;
+  display: inline-block;
+  padding: 1vh 1vh 1vh 0;
+}
+.signUpDiv ul h3 {
+  display: inline-block;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: calc(1.15vh + 1.15vw);
+  padding: 2vh 0;
+}
+.signUpDiv h2 {
+  font-family: "Nunito Sans", sans-serif;
+}
+.signUpDiv h1 {
+  font-size: calc(2.5vh + 2.5vw);
+}
+
+.google-button: hover {
+  background: #d6d7d8;
+}
+.google-button {
+  height: 75px;
+  border-width: 0;
+  background: #f2f2f2;
+  color: #737373;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  padding: 0 20px;
+  margin: 15px 0;
+
+  &:focus,
+  &:hover {
+    box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.1);
+  }
+
+  &:active {
+    background-color: #e5e5e5;
+    box-shadow: none;
+    transition-duration: 10ms;
+  }
+}
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 8px 8px;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+}
+.google-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto',arial,sans-serif;
+}
+
+
+/* opportunity pages */
+  .oppBody {
+      padding-top: 100px !important;
+  }
+  .oppPage > div {
+    margin-bottom: 7vh;
+    text-align: left;
+  }
+  .oppImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: contrast(60%);
+  }
+  .oppHeader {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 7vh;
+    background-color: #6393ce;
+    min-height: 300px;
+  }
+  .oppHeader .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .oppHeader .flex-container h3 {
+    padding: calc(0.5 * (1.5vh + 1.5vw));
+  }
+  .oppHeader .flex-container {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    left: 0;
+  }
+
+  .oppChecks ul {
+    list-style-type: none;
+    padding-left: calc(3vh + 0.33 * (2vh + 2vw));
+  }
+  .oppChecks i {
+    font-size: 3vh;
+    color: #787e82 !important;
+    padding-right: 1vh;
+  }
+  .oppChecks h3 {
+    display: inline !important;
+    color: #8a8c91 !important;
+    padding-right: 2vh;
+    font-family: "Nunito Sans", sans-serif !important;
+  }
+
+  .oppDescription {
+    padding-left: 3vh;
+    margin: 3vh 0 4vh 0 !important;
+  }
+  .oppDescription h2 {
+    color: #5d5f60;
+    padding-bottom: 2vh;
+  }
+  .oppDescription #description {
+    font-family: "Nunito Sans", sans-serif;
+    display: none;
+  }
+  .oppDescription h3 {
+    font-size: calc(1.5vh + 1.5vw);
+    color: #8a8c91;
+    display: inline;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+  }
+  .oppDescription i {
+    font-size: 3vh;
+    color: #6393ce;
+  }
+
+  .oppComponents {
+    padding-left: 3vh;
+  }
+  .oppComponents > div {
+    margin-bottom: 3vh;
+  }
+  .oppComponents h1 {
+    display: inline;
+    color: #5d5f60;
+  }
+  .oppComponents i {
+    color: #6393ce;
+    font-size: 5vh;
+    margin-right: 1vh;
+  }
+
+  .apply {
+    text-align: center !important;
+  }
+  .apply button {
+    background-color: #6393ce;
+    border: 0;
+    border-radius: 1vh;
+    padding: 2vh 4vh;
+    width: 90%
+  }
+  .apply button h1 {
+    color: white;
+  }
+
+  .applicationBody {
+    margin: 3vh 0;
+  }
+  .applicationBody > h2 {
+    display: inline;
+  }
+  .applicationBody > i {
+    color: #d59bc9;
+  }
+  .applicationBody h2 {
+    color: #8a8c91;
+    vertical-align: super;
+  }
+  .componentWrapper {
+    margin-top: 5vh;
+    overflow: hidden;
+  }
+  .componentWrapper > div {
+    width: 50%;
+    text-align: center;
+    float: left;
+    margin-bottom: 5vh;
+  }
+  .componentWrapper > div:hover {
+      transform: scale(1.1);
+  }
+  /*.componentWrapper > div:last-child {
+    float:none;
+    position: relative;
+    top: 50%;
+    left: 25%;
+  }*/
+  .componentWrapper i {
+    font-size: 17vh;
+    margin-bottom: 2vh;
+  }
+
+  .faqBody > div > i {
+    margin: 1vh 0 0 5vh;
+  }
+  .programFaqBody > h2, .peerFaqBody > h2, .peerQuestions > h2 {
+    margin: 1vh 0 0 0;
+  }
+  .faqBody > .header > h2{
+    display: inline;
+    color: #5d5f60;
+  }
+  .programFaqBody h2 {
+    color: #5d5f60;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .question {
+    font-weight: 700;
+  }
+  .peerFaqBody h2, .peerQuestions > h2 {
+    color: #5d5f60;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .peerFaqHeader, .programFaqHeader {
+    color: #5d5f60;
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .financialAidBody h2 {
+    color: #5d5f60;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .financialAidBody .subHeader {
+    color: #6393ce;
+    font-family: "League Spartan", sans-serif;
+    margin-top: 3vh;
+  }
+
+  .teamMember h2 {
+    color: #6393ce;
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+  }
+  .teamMember .member-general {
+    background: url("media/images/team/praneeth.png");
+    background-size: cover;
+  }
+
+  .components {
+    margin: 2vh 0;
+    color: #5d5f60;
+    text-align: center;
+  }
+  .components .container {
+      margin-top: 100px;
+  }
+  .components .container > div {
+    display: none;
+    margin-top: 7vh;
+  }
+  .components i {
+    color: #6393ce;
+    font-size: 17vh;
+    padding: 2vh 0;
+  }
+  .components .componentSub i {
+    color: #d59bc9;
+    font-size: 5vh;
+    margin: 2vh 0;
+  }
+  .components .componentSub h2 {
+    color: #8a8c91;
+    display: inline;
+  }
+  .componentInfo {
+    text-align: left;
+  }
+  .componentInfo > h2 {
+    color: #6393ce;
+    margin-left: 3vh;
+  }
+  .componentInfo ul {
+    margin: 0 0 5vh 0;
+  }
+  .componentInfo ul h2 {
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .components .goBack {
+    margin-left: 2vh;
+    text-align: left;
+  }
+  .components .goBack i {
+    font-size: 5vh;
+  }
+  .components .goBack h3 {
+    display: inline;
+    vertical-align: super;
+    font-size: calc(1.5vh + 1.5vw);
+  }
+  .components .fa-times {
+    position: absolute;
+    top: 115px;
+    right: 15px;
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 1024px) {
+      .oppPage {
+        margin-top: 10vh;
+      }
+      .oppHeader .flex-container h3 {
+        font-size: calc(1.5vh + 1.5vw);
+      }
+      .oppChecks h3 {
+          font-size: 1.17em;
+      }
+      .applicationBody {
+        display: none;
+      }
+      .timelineBody {
+        display: none;
+      }
+      .faqBody {
+        display: none;
+      }
+      .financialAidBody {
+        display: none;
+      }
+      #peerDescription {
+        display: none;
+      }
+      .applicationBody {
+        text-align: center;
+      }
+      .applicationBody h2 {
+        font-size: calc(1.75vh + 1.75vw);
+      }
+      .progressBar {
+          display: none;
+      }
+  }
+  @media screen and (min-width: 1024px) {
+      .oppPage {
+          width: 66.66%;
+          float: left;
+      }
+      .progressBar {
+          width: 33.33%;
+          float: left;
+      }
+      .oppHeader + .container {
+          overflow: hidden;
+          display: flex;
+          position: relative;
+      }
+      .oppDescription #shortDesc {
+          font-size: calc(1.5vh + 1.5vw);
+      }
+      .oppDescription #readMore {
+          display: none;
+      }
+      .oppDescription #description {
+          display: block;
+      }
+      .oppDescription {
+        margin: 3vh 0 0 0 !important;
+      }
+
+      .flex-container > div {
+          width: calc(33.33% - 5vw);
+      }
+
+      .oppChecks h3 {
+          font-size: calc(1vh + 1.5vw);
+      }
+
+      .header i {
+          display: none;
+      }
+
+      .oppComponents > div {
+          margin-top: 10vh;
+      }
+
+      .faqHeader h1 {
+          display: none;
+      }
+      .peerFaqHeader, .programFaqHeader {
+          text-align: left;
+      }
+      .peerFaqHeader h2, .programFaqHeader h2 {
+        padding: calc(0.25 * (2vh + 2vw));
+        font-size: calc(2vh + 2vw);
+      }
+      .programFaqHeader h2 {
+        margin-top: 7vh;
+      }
+
+      .teamMember {
+          margin: 3vh 0 5vh 0;
+      }
+      .teamMember > div {
+          margin: 0 3vh 0 0;
+          float: left;
+      }
+      .teamMember > h2 {
+          display: none;
+      }
+      #peerDescription {
+        display: block;
+        color: #5d5f60;
+        font-family: "Nunito Sans", sans-serif;
+        text-align: left;
+      }
+
+      .componentWrapper i {
+        font-size: 15vh;
+        margin-bottom: 2vh;
+      }
+      .componentWrapper > div {
+        width: 25%;
+      }
+
+      .oppDescription, .faq, .financialAid, .application {
+          padding-top: 25px;
+      }
+  }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto 2% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        border-radius: 3vh;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .signInClose:hover,
+    .signInClose:focus {
+        color: black !important;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #signInModal .modal-content {
+      margin: 10% auto 2% 30vw;
+      text-align: center;
+    }
+    #signInModal .signInClose {
+      color: #aaa;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    #signInModal h2 {
+      color: #5d5f60;
+      margin: 3vh 3vw;
+    }
+    #signInModal h3 {
+      color: #5d5f60;
+      font-family: "Nunito Sans", sans-serif;
+    }
+
+
+
+
+    #cd-vertical-nav {
+      position: absolute;
+      padding-left: 10vh;
+      top: 1%;
+      bottom: auto;
+      z-index: 1;
+    }
+    #cd-vertical-nav li {
+      text-align: right;
+    }
+    .no-touch #cd-vertical-nav a {
+      display: inline-block;
+      /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    #cd-vertical-nav a:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    #cd-vertical-nav a span {
+      float: left;
+      display: inline-block;
+    }
+    #cd-vertical-nav a:hover span {
+      transform: scale(1.1);
+    }
+    #cd-vertical-nav a:hover .cd-label {
+      opacity: 1;
+    }
+    #cd-vertical-nav a.is-selected .cd-dot {
+      background-color: #6393ce;
+    }
+    #cd-vertical-nav .cd-dot {
+      position: relative;
+      top: 11px;
+      height: 20px;
+      width: 20px;
+      border-style: solid;
+      border-color: #6393ce;
+      border-radius: 50%;
+      background-color: white;
+    }
+    #cd-vertical-nav .cd-label {
+      position: relative;
+      margin-right: 10px;
+      padding: 1vh 3vh;
+      color: 5d5f60;
+      font-size: 14px;
+      font-size: 3vh;
+      color: #5d5f60;
+      font-family: "Nunito Sans", sans-serif;
+    }
+
+    .progressBar ul {
+        list-style: none;
+    }
+  .progressBar button {
+    background-color: #6393ce;
+    border: 0;
+    border-radius: .5vh;
+    color: white;
+    margin-top: 3vh;
+    padding: 1vh 3vw;
+    font-size: calc(1vh + 1vw);
+    font-family: 'League Spartan'; 
+  }
+
+    .loading-line {
+      height: 10px;
+      margin: 10px;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    .loading-header {
+      width: 40vw;
+      display: inline-block;
+      height: 30px;
+    }
+    li .loading-line {
+      display: inline-flex;
+      width: 50%;
+    }
+    
+    .text-loading > .loading-line:last-child {
+      width: 40%;
+    }
+
+    @keyframes pulse {
+      0% {
+          background-color: rgba(128, 128, 128, 0.1)
+      }
+      50% {
+          background-color: rgba(128, 128, 128, 0.3)
+      }
+      100% {
+          background-color: rgba(128, 128, 128, 0.1)
+      }
+    }
+
+
+/*# sourceMappingURL=main.css.map */
+

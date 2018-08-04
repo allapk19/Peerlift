@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+	<meta property="og:image" content="https://peerlift.org/img/Peerlift_FB_Logo.png" />
+	<meta property="og:description" content="We're a simple online platform and youth-driven 501(c)(3) nonprofit making access to high school opportunities faster and fairer than ever before. " />
+	<meta property="og:url"content="https://peerlift.org/index.html" />
+	<meta property="og:title" content="Peerlift" />
+  <title>Peerlift</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-104681104-1', 'auto');
+	  ga('send', 'pageview');
+      
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_org'] = 'B0XAZ';
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+        y="rec";g.shutdown=function(i,v){g(y,!1)};g.restart=function(i,v){g(y,!0)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+      })(window,document,window['_fs_namespace'],'script','user');
+  </script>
+</head>
+<body>
+  <div id="opportunity-navbar">
+    <div class="container">
+      <a href="index.html"><img src="media/logo/grayText.png"></a>
+      <a id="menu-button"><i class="fa fa-search"></i></a>
+      <nav>
+        <ul>
+          <a id="loginMobile" href="login.html"><div>Sign Up / Login</div></a>
+          <a id="opportunities-dropdown"><li>Opportunities <i class="fa fa-caret-down"></i></li></a>
+          <div id="opportunities-menu">
+            <div class="column-wrapper">
+              <a href="awards.html">
+                  <i class="fa fa-trophy"></i>Awards
+              </a>
+              <a href="flyins.html">
+                  <i class="fa fa-plane"></i>College Fly-Ins
+              </a>
+              <a href="internships.html">
+                  <i class="fa fa-group"></i>Internships
+              </a>
+            </div>
+            <div class="column-wrapper">
+              <a href="scholarships.html">
+                  <i class="fa fa-money"></i>Scholarships
+              </a>
+              <a href="studyabroad.html">
+                  <i class="fa fa-map"></i>Study Abroad
+              </a>
+              <a href="summerprograms.html">
+                  <i class="fa fa-university"></i>Summer Programs
+              </a>
+            </div>
+          </div>
+          <a href="index.html#mission"><li>Mission</li></a>
+          <a href="team.html"><li>Our Team</li></a>
+          <a href="getinvolved.html"><li>Get Involved</li></a>
+          <a href="donate.html"><li>Donate</li></a>
+        </ul>
+      </nav>
+      <a id="loginBTN" href="login.html">
+        <button>Sign Up</button>
+      </a>
+    </div>
+  </div>
+  <div class="body">
+    <div id="filter-menu">
+      <i class="fa fa-times"></i>
+      <div class="container">
+        <h2>Summer Programs</h2>
+        <form>
+          <fieldset>
+            <h3>Grade:</h3>
+            <hr>
+            <input type="radio" name="grade" value="9" id="nine"><label for="nine"><h4>9</h4></label>
+            <input type="radio" name="grade" value="10" id="ten"><label for="ten"><h4>10</h4></label>
+            <input type="radio" name="grade" value="11" id="eleven"><label for="eleven"><h4>11</h4></label>
+            <input type="radio" name="grade" value="12" id="twelve"><label for="twelve"><h4>12</h4></label>
+          </fieldset>
+          <fieldset>
+            <h3>Tags:</h3>
+            <hr>
+            <div class="column-wrapper">
+              <ul>
+                <li><label for="pre-college"><span>Pre-College </span></label></li>
+                <li><label for="leadership"><span>Leadership </span></label></li>
+                <li><label for="stem">STEM</label></li>
+              </ul>
+              <ul>
+                <li><input type="checkbox" name="tags[]" value="pre-college" id="pre-college"><label for="pre-college"><i class="fa fa-check"></i></label></li>
+                <li><input type="checkbox" name="tags[]" value="leadership" id="leadership"><label for="leadership"><i class="fa fa-check"></i></label></li>
+                <li><input type="checkbox" name="tags[]" value="stem" id="stem"><label for="stem"><i class="fa fa-check"></i></label></li>
+              </ul>
+            </div>
+          </fieldset>
+          <input type="button" name="SubmitButton" value="Submit">
+        </form>
+      </div>
+    </div>
+	<div id="opportunitiesWrapper">
+        <div class="oppWrapper">
+            <div class="addOpp">
+                <i class="fa fa-list-ul"></i>
+            </div>
+            <div class="opportunity">
+              <div class="container">
+                <h2><div class='loading-line loading-header'></div></h2>
+                <div class="flex-container">
+                  <div class="grade"><h3><div class='loading-line loading-metric'></div></h3></div>
+                  <div class="selectivity"><h3><div class='loading-line loading-metric'></div></h3></div>
+                  <div class="deadline"><h3><div class='loading-line loading-metric'></div></h3></div>
+                </div>
+                <div class="info">
+                  <div class='text-loading'>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="oppWrapper">
+            <div class="addOpp">
+                <i class="fa fa-list-ul"></i>
+            </div>
+            <div class="opportunity">
+              <div class="container">
+                <h2><div class='loading-line loading-header'></div></h2>
+                <div class="flex-container">
+                  <div class="grade"><h3><div class='loading-line loading-metric'></div></h3></div>
+                  <div class="selectivity"><h3><div class='loading-line loading-metric'></div></h3></div>
+                  <div class="deadline"><h3><div class='loading-line loading-metric'></div></h3></div>
+                </div>
+                <div class="info">
+                  <div class='text-loading'>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="oppWrapper">
+            <div class="addOpp">
+                <i class="fa fa-list-ul"></i>
+            </div>
+            <div class="opportunity">
+              <div class="container">
+                <h2><div class='loading-line loading-header'></div></h2>
+                <div class="flex-container">
+                  <div class="grade"><h3><div class='loading-line loading-metric'></div></h3></div>
+                  <div class="selectivity"><h3><div class='loading-line loading-metric'></div></h3></div>
+                  <div class="deadline"><h3><div class='loading-line loading-metric'></div></h3></div>
+                </div>
+                <div class="info">
+                  <div class='text-loading'>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                    <div class='loading-line'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="filter-button">
+	<h4>Filter<i class="fa fa-filter"></i></h4>
+  </div>
+  <div class="swipeInstructions">
+      <h1>Swipe Right to Save an Opportunity!</h1>
+      <button type='button' id="swipeBTN"><h2>Get Started!</h2></button>
+  </div>
+  <div class="loginPrompt">
+      <h1>Create an account to build your personal list</h1><br>
+      <h3>Takes 20 Seconds + Free Forever</h3>
+      <a href="login.html"><button type='button' id="signUp"><h2>Sign Up</h2></button></a>
+      <button type='button' id="notNow"><h2>Not Now</h2></button>
+  </div>
+  <div class="saved">
+      <img src="media/logo/whiteIcon.png">
+      <h1>Saved!</h1>
+      <button type='button' id="undo"><h2>Undo</h2></button>
+  </div>
+  <div id="signInModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <h2>Create an account in twenty seconds to build your personal list.</h2>
+        <h3>Save opportunities to your profile now</h3>
+        <button id="Google" type="button" class="google-button" onclick="googleLogin()">
+          <span class="google-button__icon">
+            <svg viewBox="0 0 366 372" xmlns="http://www.w3.org/2000/svg"><path d="M125.9 10.2c40.2-13.9 85.3-13.6 125.3 1.1 22.2 8.2 42.5 21 59.9 37.1-5.8 6.3-12.1 12.2-18.1 18.3l-34.2 34.2c-11.3-10.8-25.1-19-40.1-23.6-17.6-5.3-36.6-6.1-54.6-2.2-21 4.5-40.5 15.5-55.6 30.9-12.2 12.3-21.4 27.5-27 43.9-20.3-15.8-40.6-31.5-61-47.3 21.5-43 60.1-76.9 105.4-92.4z" id="Shape" fill="#EA4335"/><path d="M20.6 102.4c20.3 15.8 40.6 31.5 61 47.3-8 23.3-8 49.2 0 72.4-20.3 15.8-40.6 31.6-60.9 47.3C1.9 232.7-3.8 189.6 4.4 149.2c3.3-16.2 8.7-32 16.2-46.8z" id="Shape" fill="#FBBC05"/><path d="M361.7 151.1c5.8 32.7 4.5 66.8-4.7 98.8-8.5 29.3-24.6 56.5-47.1 77.2l-59.1-45.9c19.5-13.1 33.3-34.3 37.2-57.5H186.6c.1-24.2.1-48.4.1-72.6h175z" id="Shape" fill="#4285F4"/><path d="M81.4 222.2c7.8 22.9 22.8 43.2 42.6 57.1 12.4 8.7 26.6 14.9 41.4 17.9 14.6 3 29.7 2.6 44.4.1 14.6-2.6 28.7-7.9 41-16.2l59.1 45.9c-21.3 19.7-48 33.1-76.2 39.6-31.2 7.1-64.2 7.3-95.2-1-24.6-6.5-47.7-18.2-67.6-34.1-20.9-16.6-38.3-38-50.4-62 20.3-15.7 40.6-31.5 60.9-47.3z" fill="#34A853"/></svg>
+          </span>
+          <span class="google-button__text">Sign in with Google</span>
+        </button><br>
+        <a class="signInClose">No thanks</a>
+    </div>
+  </div>
+		
+    
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="firebase.js"></script>
+    
+	<script>
+        var current;
+        var oppName;
+        var deadline;
+        var link;
+        var widthStr = $(".addOpp").css("width");
+        var width = widthStr.substr(0, widthStr.indexOf("px"));
+        var load = 0;
+        var add = true;
+        var previous = 0;
+
+        $(document).ready(function() {
+            if ($(window).width() < 1024) {
+                $(".swipeInstructions").click(function() {
+                    $(".body").css("filter", 'none');
+                    $(".swipeInstructions").css("display", "none");
+                });
+                $("#notNow").click(function() {
+                    $(".body").css("filter", 'none');
+                    $(".loginPrompt").css("display", "none");
+                });
+                $("#undo").click(function() {
+                    add = false;
+                    $(".body").css("filter", 'none');
+                    $(".saved").css("display", "none");
+                });
+                $(".saved").click(function() {
+                    if (add) {
+                        $(".body").css("filter", 'none');
+                        $(".saved").css("display", "none");
+                        ga('send', 'event', 'StudyAbroad', 'save', oppName);
+                        addOpp(oppName, deadline, "summerprograms", link, metricDate);
+                    }
+                    add = true;
+                });
+            }
+            else {
+                $(".addDesktop").css("display", "inline");
+            }
+        });
+
+        var dataArr = [];
+        if ($(window).width() < 1024) {
+            $(".oppWrapper").on({
+                'mousedown touchstart': function (e) {
+                    try {
+                        var touch = e.touches[0];
+                        var x = touch.pageX;
+                    } catch (err) {
+                        var x = e.pageX;
+                    }
+                    $element = $(this);
+                    $(this).on('mousemove touchmove', move);
+                    current = e;
+                },
+                'mouseup touchend': function (e) {
+                    $(this).off('mousemove touchmove');
+                    oppName = $(this).find(".oppName").text();
+                    deadline = $(this).find(".deadline h3").text();
+                    link = $(this).find("a").attr("href");
+                    metricDate = $(this).find(".metricDate").val();
+
+                    slideBack(previous);
+                    //move(current);
+                }
+            });
+        } else {
+            $(".addDesktop").click(function () {
+                var icon = $(this);
+                icon.fadeOut();
+                setTimeout(function () {
+                    icon.toggleClass("fa-check-circle");
+                    icon.toggleClass("fa-plus-circle");
+                }, 500);
+                icon.fadeIn();
+            });
+        }
+        function displayOpp(data) {
+            if ($(window).width() < 1024) {
+                if (uid != "none" && load == 0) {
+                    $(".body").css("filter", 'contrast(40%)');
+                    $(".swipeInstructions").css("display", "block");
+                    load = 1;
+                }
+            } else {
+                if (uid != "none" && load == 0) {
+                    console.log("display");
+                    var icon = $("#" + data.name.replace(/\s/g,'').replace(/\(|\)/g,'').replace(/'/g, 'A').replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,""));
+                    if (!icon.hasClass("added")) {
+                        icon.fadeOut();
+                        icon.addClass("added");
+                        setTimeout(function () {
+                            icon.toggleClass("fa-check-circle");
+                            icon.toggleClass("fa-plus-circle");
+                        }, 500);
+                        icon.fadeIn();
+                    }
+                }
+            }
+        }
+    </script>
+	
+    <!-- allow grades to be deselected -->
+    <script type="text/javascript">
+        var allRadios = document.getElementsByName('grade');
+        var booRadio;
+        var x = 0;
+        for(x = 0; x < allRadios.length; x++){
+
+            allRadios[x].onclick = function() {
+                if(booRadio == this){
+                    this.checked = false;
+                    booRadio = null;
+                }else{
+                    booRadio = this;
+                }
+            };
+        }
+    </script>
+    
+    <script>
+        function getOppPages() {
+            $.ajax({
+				type: 'POST',
+				url: 'php/getOppPages.php',
+				success: function(response) {
+                    var result = $.parseJSON(response);
+                    var oppIds = result[0];
+                    for (var i = 0; i < oppIds.length; i++) {
+                        var oppId = oppIds[i];
+                        if (oppId != "") {
+                            $("#" + oppId + " a").html("Learn More<i class=\"fa fa-chevron-circle-right\"></i>");
+                            $("#" + oppId + " a").attr("href", "https://peerlift.org/opportunity.html?id=" + oppId);
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+		
+	<script>
+		
+		$(document).ready(function() {
+			$.ajax({
+				type: 'POST',
+				url: 'php/summerprograms.php',
+				success: function(response) {
+					document.getElementById("opportunitiesWrapper").innerHTML = response;
+                    getOppPages();
+					$(".opportunity .info h3").click(function(){
+						expandable($(this));
+				  	});
+				    $(".opportunity-alt .info h3").click(function(){
+						expandable($(this));
+					});
+					$(".applyLink").click(function () {
+						ga('send', 'event', 'SummerPrograms', 'apply', $(this).attr('id'));
+					});
+                    if ($(window).width() < 1024) {
+                        $(".oppWrapper").on({
+                            'mousedown touchstart': function (e) {
+                                try {
+                                    var touch = e.touches[0];
+                                    var x = touch.pageX;
+                                } catch (err) {
+                                    var x = e.pageX;
+                                }
+                                $element = $(this);
+                                $(this).on('mousemove touchmove', move);
+                                current = e;
+                            },
+                            'mouseup touchend': function (e) {
+                                $(this).off('mousemove touchmove');
+                                oppName = $(this).find(".oppName").text();
+                                deadline = $(this).find(".deadline h3").text();
+                                link = $(this).find("a").attr("href");
+                                metricDate = $(this).find(".metricDate").val();
+
+                                slideBack(previous);
+                                //move(current);
+                            }
+                        });
+                    } else {
+                        $(".addDesktop").css("display", "inline");
+                        $(".addDesktop").click(function () {
+                            if (uid != "none") {
+                                var icon = $(this);
+                                if ($(this).hasClass("fa-plus-circle")) {
+                                    oppName = $(this).siblings(".oppName").text();
+                                    deadline = $(this).siblings(".flex-container").find(".deadline h3").text();
+                                    link = $(this).siblings("h2").find("a").attr("href");
+                                    metricDate = $(this).siblings(".flex-container").find(".metricDate").val();
+                                    addOpp(oppName, deadline, "summerprograms", link, metricDate);
+                                } else {
+                                    oppName = $(this).siblings(".oppName").text();
+                                    removeOpp(oppName);
+                                    icon.fadeOut();
+                                    icon.removeClass("added");
+                                    setTimeout(function () {
+                                        icon.toggleClass("fa-check-circle");
+                                        icon.toggleClass("fa-plus-circle");
+                                    }, 500);
+                                    icon.fadeIn();
+                                }
+                            } else {
+                                $("#signInModal").css("display", "block");
+                            }
+                        });
+                    }
+				}
+			});
+		});
+		
+		$("input[name = 'tags[]']").click(function() {
+			ga('send', 'event', 'SummerPrograms', 'filter', $(this).attr('id'));
+			sendInfo();
+		});
+		$("input[name = 'grade']").click(function() {
+			ga('send', 'event', 'SummerPrograms', 'filter', $(this).attr('id'));
+			sendInfo();
+		});
+		$("input[name = 'sortDate']").click(function() {
+			ga('send', 'event', 'SummerPrograms', 'filter', $(this).attr('id'));
+			sendInfo();
+		});
+
+		function sendInfo() {
+			var tags = [];
+			var grade = "";
+			var sortDate = "";
+			$('input[name^="tags"]').each(function() {
+				if ($(this).is(':checked')) { 
+					tags.push($(this).val());
+				}
+			});
+			grade = $('input[name="grade"]:checked').val();
+			sortDate = $('input[name="sortDate"]:checked').val();
+			
+			$.ajax({
+				type: 'POST',
+				url: 'php/summerprograms.php',
+				data: {tags: tags, grade: grade, sortDate: sortDate, SubmitButton: true},
+				success: function(response) {
+					document.getElementById("opportunitiesWrapper").innerHTML = response;
+                    getData();
+					$(".opportunity .info h3").click(function(){
+						expandable($(this));
+				  	});
+				    $(".opportunity-alt .info h3").click(function(){
+						expandable($(this));
+					});
+					$(".applyLink").click(function () {
+						ga('send', 'event', 'SummerPrograms', 'apply', $(this).attr('id'));
+					});
+                    if ($(window).width() < 1024) {
+                        $(".oppWrapper").on({
+                            'mousedown touchstart': function (e) {
+                                try {
+                                    var touch = e.touches[0];
+                                    var x = touch.pageX;
+                                } catch (err) {
+                                    var x = e.pageX;
+                                }
+                                $element = $(this);
+                                $(this).on('mousemove touchmove', move);
+                                current = e;
+                            },
+                            'mouseup touchend': function (e) {
+                                $(this).off('mousemove touchmove');
+                                oppName = $(this).find(".oppName").text();
+                                deadline = $(this).find(".deadline h3").text();
+                                link = $(this).find("a").attr("href");
+                                metricDate = $(this).find(".metricDate").val();
+
+                                slideBack(previous);
+                                //move(current);
+                            }
+                        });
+                    } else {
+                        $(".addDesktop").css("display", "inline");
+                        $(".addDesktop").click(function () {
+                            if (uid != "none") {
+                                var icon = $(this);
+                                if ($(this).hasClass("fa-plus-circle")) {
+                                    oppName = $(this).siblings(".oppName").text();
+                                    deadline = $(this).siblings(".flex-container").find(".deadline h3").text();
+                                    link = $(this).siblings("h2").find("a").attr("href");
+                                    metricDate = $(this).siblings(".flex-container").find(".metricDate").val();
+                                    addOpp(oppName, deadline, "summerprograms", link, metricDate);
+                                } else {
+                                    oppName = $(this).siblings(".oppName").text();
+                                    removeOpp(oppName);
+                                    icon.fadeOut();
+                                    icon.removeClass("added");
+                                    setTimeout(function () {
+                                        icon.toggleClass("fa-check-circle");
+                                        icon.toggleClass("fa-plus-circle");
+                                    }, 500);
+                                    icon.fadeIn();
+                                }
+                            } else {
+                                $("#signInModal").css("display", "block");
+                            }
+                        });
+                    }
+				}
+			});
+		}
+	</script>
+	<script>
+  window.intercomSettings = {
+    app_id: "i68br1b8"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/i68br1b8';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</body>
+</html>
